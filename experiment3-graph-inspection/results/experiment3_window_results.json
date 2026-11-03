@@ -1,0 +1,6090 @@
+[
+  {
+    "host_id": "tinba_vm",
+    "window_idx": 0,
+    "truth": "malware (DGA)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 1006,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "tinba_vm",
+    "window_idx": 1,
+    "truth": "malware (DGA)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 2272,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "tinba_vm",
+    "window_idx": 2,
+    "truth": "malware (DGA)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 2350,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "tinba_vm",
+    "window_idx": 3,
+    "truth": "malware (DGA)",
+    "bc": 19,
+    "is_rare_bc": true,
+    "n_flows": 1845,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": true,
+    "l3_candidate": {
+      "heuristic": "udp_scanning",
+      "ratio_to_threshold": 0.1,
+      "technique_id": "T1046",
+      "name": "Network Service Discovery",
+      "confidence": "MEDIUM"
+    }
+  },
+  {
+    "host_id": "tinba_vm",
+    "window_idx": 4,
+    "truth": "malware (DGA)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 1880,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "tinba_vm",
+    "window_idx": 5,
+    "truth": "malware (DGA)",
+    "bc": 19,
+    "is_rare_bc": true,
+    "n_flows": 1460,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": true,
+    "l3_candidate": {
+      "heuristic": "udp_scanning",
+      "ratio_to_threshold": 0.1,
+      "technique_id": "T1046",
+      "name": "Network Service Discovery",
+      "confidence": "MEDIUM"
+    }
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 0,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 21,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 1,
+    "truth": "malware (C2)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 12,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 2,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 22,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 3,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 11,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 4,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 17,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 5,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 6,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 17,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 7,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 22,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 8,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 20,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 9,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 20,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 10,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 11,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 11,
+    "truth": "malware (C2)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 12,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 12,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 18,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 13,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 22,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 14,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 22,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 15,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 16,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 17,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 21,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 18,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 25,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 19,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 13,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 20,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 14,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 21,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 21,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 22,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 18,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 23,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 24,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 18,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 25,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 20,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 26,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 20,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 27,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 27,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 28,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 26,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 29,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 25,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 30,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 31,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 31,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 32,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 11,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 33,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 18,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 34,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 22,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 35,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 17,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 36,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 14,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 37,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 24,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 38,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 21,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 39,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 26,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 40,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 12,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 41,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 18,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 42,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 25,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 43,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 18,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 44,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 18,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 3
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 45,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 21,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 46,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 47,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 24,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 48,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 3
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 49,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 24,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 50,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 51,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 52,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 53,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 13,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 54,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 55,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 56,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 24,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 57,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 24,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 58,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 59,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 60,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 17,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 61,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 14,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 3
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 62,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 3
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 63,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 24,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 64,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 22,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 65,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 19,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 66,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 22,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 67,
+    "truth": "malware (C2)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 23,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 68,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 20,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "dridex_vm",
+    "window_idx": 69,
+    "truth": "malware (C2)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 10,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 0,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 2,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 1,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 2,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 3,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 44,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 4,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 5,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 6,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 76,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 7,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 8,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 9,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 10,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 76,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 11,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 12,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 77,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 13,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 14,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 15,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 16,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 17,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 18,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 19,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 20,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 21,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 22,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 23,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 24,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 25,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 76,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 26,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 70,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 27,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 28,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 29,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 30,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 31,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 32,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 33,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 34,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 35,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 36,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 37,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 38,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 39,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 66,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 40,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 41,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 42,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 43,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 44,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 77,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 45,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 46,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 47,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 70,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 48,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 74,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 49,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 159,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 5
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 50,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 32,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 51,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 65,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 52,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 87,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 53,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 54,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 126,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 55,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 56,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 57,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 132,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 58,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 130,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 59,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 131,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 60,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 131,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 61,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 132,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 62,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 63,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 64,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 65,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 66,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 119,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 67,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 68,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 117,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 69,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 118,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 70,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 118,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 71,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 118,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 72,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 116,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 73,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 123,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 74,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 117,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 75,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 122,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 76,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 77,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 78,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 79,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 80,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 115,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 81,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 82,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 83,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 84,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 85,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 86,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 87,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 88,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 89,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 90,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 91,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 122,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 92,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 93,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 118,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 94,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 95,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 101,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 96,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 117,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 97,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 98,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 99,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 121,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 100,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 119,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 101,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 119,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 102,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 118,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 103,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 118,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 104,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 118,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 105,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 120,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 106,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 117,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 107,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 144,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 6
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_250",
+    "window_idx": 108,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 0,
+    "truth": "malware (RAT)",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 60,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 1,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 2,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 3,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 55,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 4,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 5,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 6,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 7,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 8,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 9,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 10,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 11,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 12,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 13,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 14,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 15,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 16,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 77,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 17,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 18,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 19,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 20,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 21,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 22,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 23,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 24,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 25,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 74,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 26,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 74,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 27,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 28,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 29,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 30,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 31,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 32,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 33,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 34,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 35,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 36,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 37,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 38,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 39,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 70,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 40,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 78,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 41,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 42,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 81,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 43,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 44,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 77,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 45,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 46,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 79,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 47,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 74,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 48,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 71,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 49,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 117,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 7
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 50,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 135,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 10
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 51,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 36,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 3
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 52,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 82,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 53,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 54,
+    "truth": "malware (RAT)",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 80,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 55,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 104,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 12
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 56,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 93,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 57,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 87,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 58,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 96,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 3
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 59,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 90,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 60,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 103,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 61,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 62,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 63,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 128,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 64,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 134,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 65,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 128,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 66,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 67,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 132,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 68,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 128,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 69,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 70,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 71,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 72,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 73,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 74,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 75,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 76,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 77,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 78,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 132,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 79,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 126,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 80,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 131,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 81,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 124,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 82,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 130,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 83,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 126,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 84,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 85,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 125,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 86,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 87,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 88,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 89,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 130,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 90,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 130,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 91,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 132,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 92,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 126,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 93,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 94,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 117,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 95,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 126,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 96,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 97,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 134,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 98,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 99,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 131,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 100,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 127,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 101,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 102,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 103,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 128,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 104,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 105,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 133,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 106,
+    "truth": "malware (RAT)",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 129,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "zeus_vm_251",
+    "window_idx": 107,
+    "truth": "malware (RAT)",
+    "bc": 25,
+    "is_rare_bc": false,
+    "n_flows": 88,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 2
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 0,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1756,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 32
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 1,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 531,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 11
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 2,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 288,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 26
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 3,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 632,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 26
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 4,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 2241,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 44
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 5,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1549,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 30
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 6,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 2065,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 24
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 7,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1462,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 40
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 8,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 2565,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 54
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 9,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1396,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 19
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 10,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1497,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 34
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 11,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 2236,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 26
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 12,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1279,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 26
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 13,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1561,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 22
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 14,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1686,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 27
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 15,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1370,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 27
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 16,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1003,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 13
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 17,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1549,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 20
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 18,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1571,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 23
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 19,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1720,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 29
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 20,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1607,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 19
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 21,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1513,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 37
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 22,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 997,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 19
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 23,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1658,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 25
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 24,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1585,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 26
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 25,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1711,
+    "metrics": {
+      "port_scanning": 3,
+      "udp_scanning": 1,
+      "infection": 34
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 26,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1426,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 28
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 27,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 965,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 17
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 28,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1546,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 31
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 29,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1509,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 31
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 30,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 2148,
+    "metrics": {
+      "port_scanning": 3,
+      "udp_scanning": 1,
+      "infection": 30
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 31,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1783,
+    "metrics": {
+      "port_scanning": 3,
+      "udp_scanning": 1,
+      "infection": 23
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 32,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1769,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 28
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 33,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1910,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 35
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 34,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1365,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 25
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 35,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1411,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 24
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 36,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1405,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 18
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 37,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1871,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 35
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 38,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1896,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 49
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 39,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1671,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 29
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 40,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1524,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 23
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 41,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1324,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 20
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 42,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1491,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 26
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 43,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 2061,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 41
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 44,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1270,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 15
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 45,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 1487,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 31
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 46,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 976,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 22
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal32",
+    "window_idx": 47,
+    "truth": "benign",
+    "bc": 22,
+    "is_rare_bc": false,
+    "n_flows": 480,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 16
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 0,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 350,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 2,
+      "infection": 14
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 1,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 534,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 2,
+      "infection": 32
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 2,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 213,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 2,
+      "infection": 15
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 3,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 41,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 5
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 4,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 37,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 5
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 5,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 29,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 5
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 6,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 139,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 25
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 7,
+    "truth": "benign",
+    "bc": 26,
+    "is_rare_bc": false,
+    "n_flows": 24,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 3
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 8,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 89,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 2,
+      "infection": 8
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 9,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 123,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 17
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 10,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 721,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 71
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 11,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 514,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 1,
+      "infection": 23
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 12,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 838,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 47
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "ctu_normal33",
+    "window_idx": 13,
+    "truth": "benign",
+    "bc": 23,
+    "is_rare_bc": false,
+    "n_flows": 916,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 1,
+      "infection": 40
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 0,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 15360,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 1,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 40704,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 2,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 16640,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 3,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 29440,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 4,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 22016,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 2,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 5,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 22016,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 6,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 26880,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 7,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 22784,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 8,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 21760,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 9,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 26624,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 10,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 23552,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 11,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 21504,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 12,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 27392,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 13,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 23296,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 14,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 21760,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 2,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 15,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 26624,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 16,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 24576,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 17,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 22016,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 18,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 26880,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 19,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 24320,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.5.12",
+    "window_idx": 20,
+    "truth": "attacker (DNS enumeration, Reconnaissance)",
+    "bc": 21,
+    "is_rare_bc": true,
+    "n_flows": 16384,
+    "metrics": {
+      "port_scanning": 0,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": true,
+    "l3_candidate": {
+      "heuristic": "udp_scanning",
+      "ratio_to_threshold": 0.1,
+      "technique_id": "T1046",
+      "name": "Network Service Discovery",
+      "confidence": "MEDIUM"
+    }
+  },
+  {
+    "host_id": "uwf_143.88.7.10",
+    "window_idx": 0,
+    "truth": "attacker (2 episodes: Reconnaissance + Discovery)",
+    "bc": 24,
+    "is_rare_bc": true,
+    "n_flows": 1536,
+    "metrics": {
+      "port_scanning": 2,
+      "udp_scanning": 0,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": true,
+    "l3_candidate": {
+      "heuristic": "port_scanning",
+      "ratio_to_threshold": 0.2,
+      "technique_id": "T1046",
+      "name": "Network Service Discovery",
+      "confidence": "HIGH"
+    }
+  },
+  {
+    "host_id": "uwf_143.88.7.10",
+    "window_idx": 1,
+    "truth": "attacker (2 episodes: Reconnaissance + Discovery)",
+    "bc": 18,
+    "is_rare_bc": false,
+    "n_flows": 512,
+    "metrics": {
+      "port_scanning": 1,
+      "udp_scanning": 0,
+      "infection": 1
+    },
+    "maltrail_flagged": false,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  },
+  {
+    "host_id": "uwf_143.88.7.10",
+    "window_idx": 2,
+    "truth": "attacker (2 episodes: Reconnaissance + Discovery)",
+    "bc": 15,
+    "is_rare_bc": true,
+    "n_flows": 2085,
+    "metrics": {
+      "port_scanning": 1000,
+      "udp_scanning": 1,
+      "infection": 1
+    },
+    "maltrail_flagged": true,
+    "escalated_to_l3": false,
+    "l3_candidate": null
+  }
+]

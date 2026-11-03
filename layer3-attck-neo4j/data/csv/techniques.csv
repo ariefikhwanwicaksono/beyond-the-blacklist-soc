@@ -1,0 +1,698 @@
+technique_id,name,is_subtechnique,url,platforms
+T1055.011,Extra Window Memory Injection,True,https://attack.mitre.org/techniques/T1055/011,Windows
+T1053.005,Scheduled Task,True,https://attack.mitre.org/techniques/T1053/005,Windows
+T1205.002,Socket Filters,True,https://attack.mitre.org/techniques/T1205/002,Linux|macOS|Windows
+T1560.001,Archive via Utility,True,https://attack.mitre.org/techniques/T1560/001,Linux|macOS|Windows
+T1021.005,VNC,True,https://attack.mitre.org/techniques/T1021/005,Linux|Windows|macOS
+T1047,Windows Management Instrumentation,False,https://attack.mitre.org/techniques/T1047,Windows
+T1687,Exploitation for Defense Impairment,False,https://attack.mitre.org/techniques/T1687,IaaS|Linux|macOS|SaaS|Windows
+T1113,Screen Capture,False,https://attack.mitre.org/techniques/T1113,Linux|macOS|Windows
+T1027.011,Fileless Storage,True,https://attack.mitre.org/techniques/T1027/011,Linux|Windows
+T1037,Boot or Logon Initialization Scripts,False,https://attack.mitre.org/techniques/T1037,ESXi|Linux|macOS|Network Devices|Windows
+T1557,Adversary-in-the-Middle,False,https://attack.mitre.org/techniques/T1557,Linux|macOS|Network Devices|Windows
+T1033,System Owner/User Discovery,False,https://attack.mitre.org/techniques/T1033,Linux|macOS|Network Devices|Windows
+T1583,Acquire Infrastructure,False,https://attack.mitre.org/techniques/T1583,PRE
+T1218.011,Rundll32,True,https://attack.mitre.org/techniques/T1218/011,Windows
+T1613,Container and Resource Discovery,False,https://attack.mitre.org/techniques/T1613,Containers
+T1583.007,Serverless,True,https://attack.mitre.org/techniques/T1583/007,PRE
+T1132.001,Standard Encoding,True,https://attack.mitre.org/techniques/T1132/001,ESXi|Linux|macOS|Windows
+T1027.009,Embedded Payloads,True,https://attack.mitre.org/techniques/T1027/009,Linux|macOS|Windows
+T1556.003,Pluggable Authentication Modules,True,https://attack.mitre.org/techniques/T1556/003,Linux|macOS
+T1578.004,Revert Cloud Instance,True,https://attack.mitre.org/techniques/T1578/004,IaaS
+T1592,Gather Victim Host Information,False,https://attack.mitre.org/techniques/T1592,PRE
+T1596.003,Digital Certificates,True,https://attack.mitre.org/techniques/T1596/003,PRE
+T1056.001,Keylogging,True,https://attack.mitre.org/techniques/T1056/001,Linux|macOS|Network Devices|Windows
+T1564.012,File/Path Exclusions,True,https://attack.mitre.org/techniques/T1564/012,Linux|macOS|Windows
+T1222.002,Linux and Mac Permissions,True,https://attack.mitre.org/techniques/T1222/002,Linux|macOS
+T1110.001,Password Guessing,True,https://attack.mitre.org/techniques/T1110/001,Containers|ESXi|IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1216.001,PubPrn,True,https://attack.mitre.org/techniques/T1216/001,Windows
+T1597.002,Purchase Technical Data,True,https://attack.mitre.org/techniques/T1597/002,PRE
+T1003,OS Credential Dumping,False,https://attack.mitre.org/techniques/T1003,Linux|macOS|Windows
+T1129,Shared Modules,False,https://attack.mitre.org/techniques/T1129,Linux|macOS|Windows
+T1602,Data from Configuration Repository,False,https://attack.mitre.org/techniques/T1602,Network Devices
+T1561.002,Disk Structure Wipe,True,https://attack.mitre.org/techniques/T1561/002,Linux|macOS|Network Devices|Windows
+T1498.001,Direct Network Flood,True,https://attack.mitre.org/techniques/T1498/001,Windows|IaaS|Linux|macOS
+T1574.007,Path Interception by PATH Environment Variable,True,https://attack.mitre.org/techniques/T1574/007,Linux|macOS|Windows
+T1213.002,Sharepoint,True,https://attack.mitre.org/techniques/T1213/002,Office Suite|Windows
+T1006,Direct Volume Access,False,https://attack.mitre.org/techniques/T1006,Network Devices|Windows
+T1588.007,Artificial Intelligence,True,https://attack.mitre.org/techniques/T1588/007,PRE
+T1666,Modify Cloud Resource Hierarchy,False,https://attack.mitre.org/techniques/T1666,IaaS
+T1564.008,Email Hiding Rules,True,https://attack.mitre.org/techniques/T1564/008,Windows|Linux|macOS|Office Suite
+T1491.002,External Defacement,True,https://attack.mitre.org/techniques/T1491/002,Windows|IaaS|Linux|macOS
+T1027.013,Encrypted/Encoded File,True,https://attack.mitre.org/techniques/T1027/013,Linux|macOS|Windows
+T1590.005,IP Addresses,True,https://attack.mitre.org/techniques/T1590/005,PRE
+T1499.001,OS Exhaustion Flood,True,https://attack.mitre.org/techniques/T1499/001,Linux|macOS|Windows
+T1014,Rootkit,False,https://attack.mitre.org/techniques/T1014,Linux|macOS|Windows
+T1546.013,PowerShell Profile,True,https://attack.mitre.org/techniques/T1546/013,Windows
+T1059.007,JavaScript,True,https://attack.mitre.org/techniques/T1059/007,Linux|macOS|Windows
+T1685.003,Modify or Spoof Tool UI,True,https://attack.mitre.org/techniques/T1685/003,Linux|macOS|Windows
+T1590.002,DNS,True,https://attack.mitre.org/techniques/T1590/002,PRE
+T1485.001,Lifecycle-Triggered Deletion,True,https://attack.mitre.org/techniques/T1485/001,IaaS
+T1123,Audio Capture,False,https://attack.mitre.org/techniques/T1123,Linux|macOS|Windows
+T1543,Create or Modify System Process,False,https://attack.mitre.org/techniques/T1543,Containers|Linux|macOS|Windows
+T1133,External Remote Services,False,https://attack.mitre.org/techniques/T1133,Containers|Linux|macOS|Windows
+T1546.006,LC_LOAD_DYLIB Addition,True,https://attack.mitre.org/techniques/T1546/006,macOS
+T1539,Steal Web Session Cookie,False,https://attack.mitre.org/techniques/T1539,Linux|macOS|Office Suite|SaaS|Windows
+T1053.007,Container Orchestration Job,True,https://attack.mitre.org/techniques/T1053/007,Containers
+T1568.002,Domain Generation Algorithms,True,https://attack.mitre.org/techniques/T1568/002,ESXi|Linux|macOS|Windows
+T1036.007,Double File Extension,True,https://attack.mitre.org/techniques/T1036/007,Windows
+T1548.002,Bypass User Account Control,True,https://attack.mitre.org/techniques/T1548/002,Windows
+T1496.003,SMS Pumping,True,https://attack.mitre.org/techniques/T1496/003,SaaS
+T1016.001,Internet Connection Discovery,True,https://attack.mitre.org/techniques/T1016/001,Windows|Linux|macOS|ESXi
+T1548.003,Sudo and Sudo Caching,True,https://attack.mitre.org/techniques/T1548/003,Linux|macOS
+T1685.001,Disable or Modify Windows Event Log,True,https://attack.mitre.org/techniques/T1685/001,Windows
+T1682,Query Public AI Services,False,https://attack.mitre.org/techniques/T1682,PRE
+T1560.003,Archive via Custom Method,True,https://attack.mitre.org/techniques/T1560/003,Linux|macOS|Windows
+T1578,Modify Cloud Compute Infrastructure,False,https://attack.mitre.org/techniques/T1578,IaaS
+T1584.008,Network Devices,True,https://attack.mitre.org/techniques/T1584/008,PRE
+T1583.008,Malvertising,True,https://attack.mitre.org/techniques/T1583/008,PRE
+T1069,Permission Groups Discovery,False,https://attack.mitre.org/techniques/T1069,Containers|IaaS|Identity Provider|Linux|macOS|Office Suite|SaaS|Windows
+T1114,Email Collection,False,https://attack.mitre.org/techniques/T1114,Windows|macOS|Linux|Office Suite
+T1003.002,Security Account Manager,True,https://attack.mitre.org/techniques/T1003/002,Windows
+T1596.002,WHOIS,True,https://attack.mitre.org/techniques/T1596/002,PRE
+T1542.001,System Firmware,True,https://attack.mitre.org/techniques/T1542/001,Network Devices|Windows
+T1594,Search Victim-Owned Websites,False,https://attack.mitre.org/techniques/T1594,PRE
+T1069.003,Cloud Groups,True,https://attack.mitre.org/techniques/T1069/003,SaaS|IaaS|Office Suite|Identity Provider
+T1574.011,Services Registry Permissions Weakness,True,https://attack.mitre.org/techniques/T1574/011,Windows
+T1596.001,DNS/Passive DNS,True,https://attack.mitre.org/techniques/T1596/001,PRE
+T1499.003,Application Exhaustion Flood,True,https://attack.mitre.org/techniques/T1499/003,Windows|IaaS|Linux|macOS
+T1195.001,Compromise Software Dependencies and Development Tools,True,https://attack.mitre.org/techniques/T1195/001,Linux|macOS|Windows
+T1588.004,Digital Certificates,True,https://attack.mitre.org/techniques/T1588/004,PRE
+T1583.002,DNS Server,True,https://attack.mitre.org/techniques/T1583/002,PRE
+T1561,Disk Wipe,False,https://attack.mitre.org/techniques/T1561,Linux|macOS|Windows|Network Devices
+T1071.004,DNS,True,https://attack.mitre.org/techniques/T1071/004,ESXi|Linux|macOS|Network Devices|Windows
+T1552.005,Cloud Instance Metadata API,True,https://attack.mitre.org/techniques/T1552/005,IaaS
+T1555.002,Securityd Memory,True,https://attack.mitre.org/techniques/T1555/002,Linux|macOS
+T1615,Group Policy Discovery,False,https://attack.mitre.org/techniques/T1615,Windows
+T1542.003,Bootkit,True,https://attack.mitre.org/techniques/T1542/003,Linux|Windows
+T1025,Data from Removable Media,False,https://attack.mitre.org/techniques/T1025,Linux|macOS|Windows
+T1218.013,Mavinject,True,https://attack.mitre.org/techniques/T1218/013,Windows
+T1074.001,Local Data Staging,True,https://attack.mitre.org/techniques/T1074/001,ESXi|Linux|macOS|Windows
+T1036.005,Match Legitimate Resource Name or Location,True,https://attack.mitre.org/techniques/T1036/005,Containers|ESXi|Linux|macOS|Windows
+T1587.003,Digital Certificates,True,https://attack.mitre.org/techniques/T1587/003,PRE
+T1565.001,Stored Data Manipulation,True,https://attack.mitre.org/techniques/T1565/001,Linux|macOS|Windows
+T1110.002,Password Cracking,True,https://attack.mitre.org/techniques/T1110/002,Identity Provider|Linux|macOS|Network Devices|Office Suite|Windows
+T1114.001,Local Email Collection,True,https://attack.mitre.org/techniques/T1114/001,Windows
+T1555.001,Keychain,True,https://attack.mitre.org/techniques/T1555/001,macOS
+T1547,Boot or Logon Autostart Execution,False,https://attack.mitre.org/techniques/T1547,Linux|macOS|Windows|Network Devices
+T1003.004,LSA Secrets,True,https://attack.mitre.org/techniques/T1003/004,Windows
+T1600,Weaken Encryption,False,https://attack.mitre.org/techniques/T1600,Network Devices
+T1606.002,SAML Tokens,True,https://attack.mitre.org/techniques/T1606/002,SaaS|Windows|IaaS|Office Suite|Identity Provider
+T1036.008,Masquerade File Type,True,https://attack.mitre.org/techniques/T1036/008,Linux|macOS|Windows
+T1489,Service Stop,False,https://attack.mitre.org/techniques/T1489,ESXi|IaaS|Linux|macOS|Windows
+T1587.001,Malware,True,https://attack.mitre.org/techniques/T1587/001,PRE
+T1652,Device Driver Discovery,False,https://attack.mitre.org/techniques/T1652,Linux|macOS|Windows
+T1087.002,Domain Account,True,https://attack.mitre.org/techniques/T1087/002,Linux|macOS|Windows
+T1547.014,Active Setup,True,https://attack.mitre.org/techniques/T1547/014,Windows
+T1564,Hide Artifacts,False,https://attack.mitre.org/techniques/T1564,ESXi|Linux|macOS|Office Suite|Windows
+T1559.002,Dynamic Data Exchange,True,https://attack.mitre.org/techniques/T1559/002,Windows
+T1204.002,Malicious File,True,https://attack.mitre.org/techniques/T1204/002,Linux|macOS|Windows
+T1591.003,Identify Business Tempo,True,https://attack.mitre.org/techniques/T1591/003,PRE
+T1685.004,Disable or Modify Linux Audit System Log,True,https://attack.mitre.org/techniques/T1685/004,Linux
+T1071.005,Publish/Subscribe Protocols,True,https://attack.mitre.org/techniques/T1071/005,macOS|Linux|Windows|Network Devices
+T1592.001,Hardware,True,https://attack.mitre.org/techniques/T1592/001,PRE
+T1080,Taint Shared Content,False,https://attack.mitre.org/techniques/T1080,Windows|SaaS|Linux|macOS|Office Suite
+T1484.002,Trust Modification,True,https://attack.mitre.org/techniques/T1484/002,Identity Provider|Windows
+T1213.006,Databases,True,https://attack.mitre.org/techniques/T1213/006,IaaS|Linux|macOS|SaaS|Windows
+T1573.001,Symmetric Cryptography,True,https://attack.mitre.org/techniques/T1573/001,ESXi|Linux|macOS|Network Devices|Windows
+T1087.001,Local Account,True,https://attack.mitre.org/techniques/T1087/001,ESXi|Linux|macOS|Windows
+T1586.001,Social Media Accounts,True,https://attack.mitre.org/techniques/T1586/001,PRE
+T1176.001,Browser Extensions,True,https://attack.mitre.org/techniques/T1176/001,Linux|Windows|macOS
+T1542.005,TFTP Boot,True,https://attack.mitre.org/techniques/T1542/005,Network Devices
+T1686.003,Windows Host Firewall,True,https://attack.mitre.org/techniques/T1686/003,Windows
+T1543.003,Windows Service,True,https://attack.mitre.org/techniques/T1543/003,Windows
+T1568.001,Fast Flux DNS,True,https://attack.mitre.org/techniques/T1568/001,Linux|macOS|Windows|ESXi
+T1497.001,System Checks,True,https://attack.mitre.org/techniques/T1497/001,Linux|macOS|Windows
+T1053.003,Cron,True,https://attack.mitre.org/techniques/T1053/003,Linux|macOS|ESXi
+T1069.002,Domain Groups,True,https://attack.mitre.org/techniques/T1069/002,Linux|macOS|Windows
+T1588.006,Vulnerabilities,True,https://attack.mitre.org/techniques/T1588/006,PRE
+T1566.002,Spearphishing Link,True,https://attack.mitre.org/techniques/T1566/002,Identity Provider|Linux|macOS|Office Suite|SaaS|Windows
+T1499.004,Application or System Exploitation,True,https://attack.mitre.org/techniques/T1499/004,Windows|IaaS|Linux|macOS
+T1137,Office Application Startup,False,https://attack.mitre.org/techniques/T1137,Windows|Office Suite
+T1218.004,InstallUtil,True,https://attack.mitre.org/techniques/T1218/004,Windows
+T1598.003,Spearphishing Link,True,https://attack.mitre.org/techniques/T1598/003,PRE
+T1021.004,SSH,True,https://attack.mitre.org/techniques/T1021/004,ESXi|Linux|macOS
+T1098.003,Additional Cloud Roles,True,https://attack.mitre.org/techniques/T1098/003,IaaS|Identity Provider|Office Suite|SaaS
+T1547.012,Print Processors,True,https://attack.mitre.org/techniques/T1547/012,Windows
+T1566.001,Spearphishing Attachment,True,https://attack.mitre.org/techniques/T1566/001,Linux|macOS|Windows
+T1027.008,Stripped Payloads,True,https://attack.mitre.org/techniques/T1027/008,Linux|macOS|Network Devices|Windows
+T1559.001,Component Object Model,True,https://attack.mitre.org/techniques/T1559/001,Windows
+T1574.001,DLL,True,https://attack.mitre.org/techniques/T1574/001,Windows
+T1119,Automated Collection,False,https://attack.mitre.org/techniques/T1119,IaaS|Linux|macOS|Office Suite|SaaS|Windows
+T1689,Downgrade Attack,False,https://attack.mitre.org/techniques/T1689,macOS|Windows|Linux
+T1115,Clipboard Data,False,https://attack.mitre.org/techniques/T1115,Linux|macOS|Windows
+T1003.007,Proc Filesystem,True,https://attack.mitre.org/techniques/T1003/007,Linux
+T1583.005,Botnet,True,https://attack.mitre.org/techniques/T1583/005,PRE
+T1555.005,Password Managers,True,https://attack.mitre.org/techniques/T1555/005,Linux|macOS|Windows
+T1553.001,Gatekeeper Bypass,True,https://attack.mitre.org/techniques/T1553/001,macOS
+T1675,ESXi Administration Command,False,https://attack.mitre.org/techniques/T1675,ESXi
+T1608.004,Drive-by Target,True,https://attack.mitre.org/techniques/T1608/004,PRE
+T1007,System Service Discovery,False,https://attack.mitre.org/techniques/T1007,Linux|macOS|Windows
+T1040,Network Sniffing,False,https://attack.mitre.org/techniques/T1040,IaaS|Linux|macOS|Network Devices|Windows
+T1553.002,Code Signing,True,https://attack.mitre.org/techniques/T1553/002,macOS|Windows
+T1530,Data from Cloud Storage,False,https://attack.mitre.org/techniques/T1530,IaaS|Office Suite|SaaS
+T1565.003,Runtime Data Manipulation,True,https://attack.mitre.org/techniques/T1565/003,Linux|macOS|Windows
+T1552.002,Credentials in Registry,True,https://attack.mitre.org/techniques/T1552/002,Windows
+T1135,Network Share Discovery,False,https://attack.mitre.org/techniques/T1135,Linux|macOS|Windows
+T1120,Peripheral Device Discovery,False,https://attack.mitre.org/techniques/T1120,Linux|macOS|Windows
+T1036.009,Break Process Trees,True,https://attack.mitre.org/techniques/T1036/009,Linux|macOS
+T1590.004,Network Topology,True,https://attack.mitre.org/techniques/T1590/004,PRE
+T1587.002,Code Signing Certificates,True,https://attack.mitre.org/techniques/T1587/002,PRE
+T1222.001,Windows Permissions,True,https://attack.mitre.org/techniques/T1222/001,Windows
+T1137.006,Add-ins,True,https://attack.mitre.org/techniques/T1137/006,Windows|Office Suite
+T1685.002,Disable or Modify Cloud Log,True,https://attack.mitre.org/techniques/T1685/002,IaaS|SaaS|Identity Provider|Office Suite
+T1505.002,Transport Agent,True,https://attack.mitre.org/techniques/T1505/002,Linux|Windows
+T1082,System Information Discovery,False,https://attack.mitre.org/techniques/T1082,ESXi|IaaS|Linux|macOS|Network Devices|Windows
+T1071,Application Layer Protocol,False,https://attack.mitre.org/techniques/T1071,Linux|macOS|Windows|Network Devices|ESXi
+T1574.014,AppDomainManager,True,https://attack.mitre.org/techniques/T1574/014,Windows
+T1074.002,Remote Data Staging,True,https://attack.mitre.org/techniques/T1074/002,ESXi|IaaS|Linux|macOS|Windows
+T1098.006,Additional Container Cluster Roles,True,https://attack.mitre.org/techniques/T1098/006,Containers
+T1053,Scheduled Task/Job,False,https://attack.mitre.org/techniques/T1053,Containers|ESXi|Linux|macOS|Network Devices|Windows
+T1218.007,Msiexec,True,https://attack.mitre.org/techniques/T1218/007,Windows
+T1590.003,Network Trust Dependencies,True,https://attack.mitre.org/techniques/T1590/003,PRE
+T1498.002,Reflection Amplification,True,https://attack.mitre.org/techniques/T1498/002,Windows|IaaS|Linux|macOS
+T1556.002,Password Filter DLL,True,https://attack.mitre.org/techniques/T1556/002,Windows
+T1505.005,Terminal Services DLL,True,https://attack.mitre.org/techniques/T1505/005,Windows
+T1059.002,AppleScript,True,https://attack.mitre.org/techniques/T1059/002,macOS
+T1176,Software Extensions,False,https://attack.mitre.org/techniques/T1176,Linux|macOS|Windows
+T1499.002,Service Exhaustion Flood,True,https://attack.mitre.org/techniques/T1499/002,Windows|IaaS|Linux|macOS
+T1195.003,Compromise Hardware Supply Chain,True,https://attack.mitre.org/techniques/T1195/003,Linux|macOS|Windows
+T1106,Native API,False,https://attack.mitre.org/techniques/T1106,Linux|macOS|Windows
+T1558.005,Ccache Files,True,https://attack.mitre.org/techniques/T1558/005,Linux|macOS
+T1070.007,Clear Network Connection History and Configurations,True,https://attack.mitre.org/techniques/T1070/007,Linux|macOS|Windows|Network Devices
+T1558.004,AS-REP Roasting,True,https://attack.mitre.org/techniques/T1558/004,Windows
+T1584.003,Virtual Private Server,True,https://attack.mitre.org/techniques/T1584/003,PRE
+T1059.010,AutoHotKey & AutoIT,True,https://attack.mitre.org/techniques/T1059/010,Windows
+T1600.001,Reduce Key Space,True,https://attack.mitre.org/techniques/T1600/001,Network Devices
+T1070.003,Clear Command History,True,https://attack.mitre.org/techniques/T1070/003,ESXi|Linux|macOS|Network Devices|Windows
+T1202,Indirect Command Execution,False,https://attack.mitre.org/techniques/T1202,Windows
+T1091,Replication Through Removable Media,False,https://attack.mitre.org/techniques/T1091,Windows
+T1005,Data from Local System,False,https://attack.mitre.org/techniques/T1005,ESXi|Linux|macOS|Network Devices|Windows
+T1140,Deobfuscate/Decode Files or Information,False,https://attack.mitre.org/techniques/T1140,ESXi|Linux|macOS|Windows
+T1137.005,Outlook Rules,True,https://attack.mitre.org/techniques/T1137/005,Windows|Office Suite
+T1586.003,Cloud Accounts,True,https://attack.mitre.org/techniques/T1586/003,PRE
+T1586.002,Email Accounts,True,https://attack.mitre.org/techniques/T1586/002,PRE
+T1098.007,Additional Local or Domain Groups,True,https://attack.mitre.org/techniques/T1098/007,Windows|macOS|Linux
+T1608.001,Upload Malware,True,https://attack.mitre.org/techniques/T1608/001,PRE
+T1195,Supply Chain Compromise,False,https://attack.mitre.org/techniques/T1195,Linux|Windows|macOS|SaaS
+T1190,Exploit Public-Facing Application,False,https://attack.mitre.org/techniques/T1190,Containers|ESXi|IaaS|Linux|macOS|Network Devices|Windows
+T1558,Steal or Forge Kerberos Tickets,False,https://attack.mitre.org/techniques/T1558,Linux|macOS|Windows
+T1555,Credentials from Password Stores,False,https://attack.mitre.org/techniques/T1555,IaaS|Linux|macOS|Windows
+T1567,Exfiltration Over Web Service,False,https://attack.mitre.org/techniques/T1567,ESXi|Linux|macOS|Office Suite|SaaS|Windows
+T1219,Remote Access Tools,False,https://attack.mitre.org/techniques/T1219,Linux|macOS|Windows
+T1583.001,Domains,True,https://attack.mitre.org/techniques/T1583/001,PRE
+T1560.002,Archive via Library,True,https://attack.mitre.org/techniques/T1560/002,Linux|macOS|Windows
+T1055.003,Thread Execution Hijacking,True,https://attack.mitre.org/techniques/T1055/003,Windows
+T1684,Social Engineering,False,https://attack.mitre.org/techniques/T1684,Linux|macOS|Office Suite|SaaS|Windows
+T1036,Masquerading,False,https://attack.mitre.org/techniques/T1036,Containers|ESXi|Linux|macOS|Windows
+T1546.011,Application Shimming,True,https://attack.mitre.org/techniques/T1546/011,Windows
+T1552,Unsecured Credentials,False,https://attack.mitre.org/techniques/T1552,Windows|SaaS|IaaS|Linux|macOS|Containers|Network Devices|Office Suite|Identity Provider
+T1547.010,Port Monitors,True,https://attack.mitre.org/techniques/T1547/010,Windows
+T1070.008,Clear Mailbox Data,True,https://attack.mitre.org/techniques/T1070/008,Linux|macOS|Office Suite|Windows
+T1037.002,Login Hook,True,https://attack.mitre.org/techniques/T1037/002,macOS
+T1659,Content Injection,False,https://attack.mitre.org/techniques/T1659,Linux|macOS|Windows
+T1055,Process Injection,False,https://attack.mitre.org/techniques/T1055,Linux|macOS|Windows
+T1567.004,Exfiltration Over Webhook,True,https://attack.mitre.org/techniques/T1567/004,ESXi|Linux|macOS|Office Suite|SaaS|Windows
+T1205,Traffic Signaling,False,https://attack.mitre.org/techniques/T1205,Linux|macOS|Network Devices|Windows
+T1021.008,Direct Cloud VM Connections,True,https://attack.mitre.org/techniques/T1021/008,IaaS
+T1218,System Binary Proxy Execution,False,https://attack.mitre.org/techniques/T1218,Linux|macOS|Windows
+T1070.006,Timestomp,True,https://attack.mitre.org/techniques/T1070/006,ESXi|Linux|macOS|Windows
+T1557.004,Evil Twin,True,https://attack.mitre.org/techniques/T1557/004,Network Devices
+T1620,Reflective Code Loading,False,https://attack.mitre.org/techniques/T1620,Linux|macOS|Windows
+T1016.002,Wi-Fi Discovery,True,https://attack.mitre.org/techniques/T1016/002,Linux|Windows|macOS
+T1480.002,Mutual Exclusion,True,https://attack.mitre.org/techniques/T1480/002,Linux|macOS|Windows
+T1564.011,Ignore Process Interrupts,True,https://attack.mitre.org/techniques/T1564/011,Linux|macOS|Windows
+T1611,Escape to Host,False,https://attack.mitre.org/techniques/T1611,Windows|Linux|Containers|ESXi
+T1518.002,Backup Software Discovery,True,https://attack.mitre.org/techniques/T1518/002,Windows|macOS|Linux
+T1547.009,Shortcut Modification,True,https://attack.mitre.org/techniques/T1547/009,Windows
+T1010,Application Window Discovery,False,https://attack.mitre.org/techniques/T1010,Linux|macOS|Windows
+T1569.003,Systemctl,True,https://attack.mitre.org/techniques/T1569/003,Linux
+T1087.003,Email Account,True,https://attack.mitre.org/techniques/T1087/003,Windows|Office Suite
+T1497.003,Time Based Checks,True,https://attack.mitre.org/techniques/T1497/003,Linux|macOS|Windows
+T1218.003,CMSTP,True,https://attack.mitre.org/techniques/T1218/003,Windows
+T1563.001,SSH Hijacking,True,https://attack.mitre.org/techniques/T1563/001,Linux|macOS
+T1029,Scheduled Transfer,False,https://attack.mitre.org/techniques/T1029,Linux|macOS|Windows
+T1021.002,SMB/Windows Admin Shares,True,https://attack.mitre.org/techniques/T1021/002,Windows
+T1525,Implant Internal Image,False,https://attack.mitre.org/techniques/T1525,IaaS|Containers
+T1572,Protocol Tunneling,False,https://attack.mitre.org/techniques/T1572,ESXi|Linux|macOS|Windows
+T1218.002,Control Panel,True,https://attack.mitre.org/techniques/T1218/002,Windows
+T1599.001,Network Address Translation Traversal,True,https://attack.mitre.org/techniques/T1599/001,Network Devices
+T1608.002,Upload Tool,True,https://attack.mitre.org/techniques/T1608/002,PRE
+T1547.005,Security Support Provider,True,https://attack.mitre.org/techniques/T1547/005,Windows
+T1036.011,Overwrite Process Arguments,True,https://attack.mitre.org/techniques/T1036/011,Linux
+T1550,Use Alternate Authentication Material,False,https://attack.mitre.org/techniques/T1550,Containers|IaaS|Identity Provider|Linux|Office Suite|SaaS|Windows
+T1597.001,Threat Intel Vendors,True,https://attack.mitre.org/techniques/T1597/001,PRE
+T1011,Exfiltration Over Other Network Medium,False,https://attack.mitre.org/techniques/T1011,Linux|macOS|Windows
+T1602.002,Network Device Configuration Dump,True,https://attack.mitre.org/techniques/T1602/002,Network Devices
+T1589,Gather Victim Identity Information,False,https://attack.mitre.org/techniques/T1589,PRE
+T1560,Archive Collected Data,False,https://attack.mitre.org/techniques/T1560,Linux|macOS|Windows
+T1553.003,SIP and Trust Provider Hijacking,True,https://attack.mitre.org/techniques/T1553/003,Windows
+T1185,Browser Session Hijacking,False,https://attack.mitre.org/techniques/T1185,Windows
+T1021,Remote Services,False,https://attack.mitre.org/techniques/T1021,Linux|macOS|Windows|IaaS|ESXi
+T1071.003,Mail Protocols,True,https://attack.mitre.org/techniques/T1071/003,Linux|macOS|Network Devices|Windows
+T1556.007,Hybrid Identity,True,https://attack.mitre.org/techniques/T1556/007,IaaS|Identity Provider|Office Suite|SaaS|Windows
+T1595.002,Vulnerability Scanning,True,https://attack.mitre.org/techniques/T1595/002,PRE
+T1059.009,Cloud API,True,https://attack.mitre.org/techniques/T1059/009,IaaS|Identity Provider|Office Suite|SaaS
+T1596,Search Open Technical Databases,False,https://attack.mitre.org/techniques/T1596,PRE
+T1218.015,Electron Applications,True,https://attack.mitre.org/techniques/T1218/015,Linux|macOS|Windows
+T1207,Rogue Domain Controller,False,https://attack.mitre.org/techniques/T1207,Windows
+T1553.006,Code Signing Policy Modification,True,https://attack.mitre.org/techniques/T1553/006,macOS|Windows
+T1610,Deploy Container,False,https://attack.mitre.org/techniques/T1610,Containers
+T1112,Modify Registry,False,https://attack.mitre.org/techniques/T1112,Windows
+T1543.004,Launch Daemon,True,https://attack.mitre.org/techniques/T1543/004,macOS
+T1580,Cloud Infrastructure Discovery,False,https://attack.mitre.org/techniques/T1580,IaaS
+T1555.003,Credentials from Web Browsers,True,https://attack.mitre.org/techniques/T1555/003,Linux|macOS|Windows
+T1574.008,Path Interception by Search Order Hijacking,True,https://attack.mitre.org/techniques/T1574/008,Windows
+T1491,Defacement,False,https://attack.mitre.org/techniques/T1491,Windows|IaaS|Linux|macOS|ESXi
+T1535,Unused/Unsupported Cloud Regions,False,https://attack.mitre.org/techniques/T1535,IaaS
+T1557.003,DHCP Spoofing,True,https://attack.mitre.org/techniques/T1557/003,Linux|Windows|macOS
+T1563,Remote Service Session Hijacking,False,https://attack.mitre.org/techniques/T1563,Linux|macOS|Windows
+T1564.013,Bind Mounts,True,https://attack.mitre.org/techniques/T1564/013,Linux
+T1027.001,Binary Padding,True,https://attack.mitre.org/techniques/T1027/001,Linux|macOS|Windows
+T1505.003,Web Shell,True,https://attack.mitre.org/techniques/T1505/003,Linux|macOS|Network Devices|Windows
+T1484.001,Group Policy Modification,True,https://attack.mitre.org/techniques/T1484/001,Windows
+T1685.006,Clear Linux or Mac System Logs,True,https://attack.mitre.org/techniques/T1685/006,Linux|macOS
+T1217,Browser Information Discovery,False,https://attack.mitre.org/techniques/T1217,Linux|macOS|Windows
+T1552.004,Private Keys,True,https://attack.mitre.org/techniques/T1552/004,Linux|macOS|Network Devices|Windows
+T1583.004,Server,True,https://attack.mitre.org/techniques/T1583/004,PRE
+T1021.006,Windows Remote Management,True,https://attack.mitre.org/techniques/T1021/006,Windows
+T1011.001,Exfiltration Over Bluetooth,True,https://attack.mitre.org/techniques/T1011/001,Linux|macOS|Windows
+T1078.001,Default Accounts,True,https://attack.mitre.org/techniques/T1078/001,Containers|ESXi|IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1547.003,Time Providers,True,https://attack.mitre.org/techniques/T1547/003,Windows
+T1546.005,Trap,True,https://attack.mitre.org/techniques/T1546/005,macOS|Linux
+T1574.006,Dynamic Linker Hijacking,True,https://attack.mitre.org/techniques/T1574/006,Linux|macOS
+T1136.001,Local Account,True,https://attack.mitre.org/techniques/T1136/001,Containers|ESXi|Linux|macOS|Network Devices|Windows
+T1681,Search Threat Vendor Data,False,https://attack.mitre.org/techniques/T1681,PRE
+T1674,Input Injection,False,https://attack.mitre.org/techniques/T1674,Windows|macOS|Linux
+T1092,Communication Through Removable Media,False,https://attack.mitre.org/techniques/T1092,Linux|macOS|Windows
+T1585.002,Email Accounts,True,https://attack.mitre.org/techniques/T1585/002,PRE
+T1557.001,Name Resolution Poisoning and SMB Relay,True,https://attack.mitre.org/techniques/T1557/001,Windows
+T1222,File and Directory Permissions Modification,False,https://attack.mitre.org/techniques/T1222,ESXi|Linux|macOS|Windows
+T1003.001,LSASS Memory,True,https://attack.mitre.org/techniques/T1003/001,Windows
+T1176.002,IDE Extensions,True,https://attack.mitre.org/techniques/T1176/002,Linux|macOS|Windows
+T1595,Active Scanning,False,https://attack.mitre.org/techniques/T1595,PRE
+T1027.016,Junk Code Insertion,True,https://attack.mitre.org/techniques/T1027/016,Linux|macOS|Windows
+T1548,Abuse Elevation Control Mechanism,False,https://attack.mitre.org/techniques/T1548,Linux|macOS|Windows|IaaS|Office Suite|Identity Provider
+T1134.002,Create Process with Token,True,https://attack.mitre.org/techniques/T1134/002,Windows
+T1548.001,Setuid and Setgid,True,https://attack.mitre.org/techniques/T1548/001,Linux|macOS
+T1547.004,Winlogon Helper DLL,True,https://attack.mitre.org/techniques/T1547/004,Windows
+T1021.003,Distributed Component Object Model,True,https://attack.mitre.org/techniques/T1021/003,Windows
+T1110.003,Password Spraying,True,https://attack.mitre.org/techniques/T1110/003,Containers|ESXi|IaaS|Identity Provider|Linux|Network Devices|Office Suite|SaaS|Windows|macOS
+T1090.002,External Proxy,True,https://attack.mitre.org/techniques/T1090/002,ESXi|Linux|macOS|Network Devices|Windows
+T1056.003,Web Portal Capture,True,https://attack.mitre.org/techniques/T1056/003,Linux|macOS|Windows
+T1589.002,Email Addresses,True,https://attack.mitre.org/techniques/T1589/002,PRE
+T1598.004,Spearphishing Voice,True,https://attack.mitre.org/techniques/T1598/004,PRE
+T1683.001,Written Content,True,https://attack.mitre.org/techniques/T1683/001,PRE
+T1003.005,Cached Domain Credentials,True,https://attack.mitre.org/techniques/T1003/005,Windows|Linux
+T1098.004,SSH Authorized Keys,True,https://attack.mitre.org/techniques/T1098/004,ESXi|IaaS|Linux|macOS|Network Devices
+T1673,Virtual Machine Discovery,False,https://attack.mitre.org/techniques/T1673,ESXi|Linux|macOS|Windows
+T1590.006,Network Security Appliances,True,https://attack.mitre.org/techniques/T1590/006,PRE
+T1546.012,Image File Execution Options Injection,True,https://attack.mitre.org/techniques/T1546/012,Windows
+T1218.008,Odbcconf,True,https://attack.mitre.org/techniques/T1218/008,Windows
+T1593.002,Search Engines,True,https://attack.mitre.org/techniques/T1593/002,PRE
+T1591.002,Business Relationships,True,https://attack.mitre.org/techniques/T1591/002,PRE
+T1548.005,Temporary Elevated Cloud Access,True,https://attack.mitre.org/techniques/T1548/005,IaaS|Office Suite|Identity Provider
+T1125,Video Capture,False,https://attack.mitre.org/techniques/T1125,Linux|macOS|Windows
+T1055.013,Process Doppelgänging,True,https://attack.mitre.org/techniques/T1055/013,Windows
+T1016,System Network Configuration Discovery,False,https://attack.mitre.org/techniques/T1016,ESXi|Linux|macOS|Network Devices|Windows
+T1578.003,Delete Cloud Instance,True,https://attack.mitre.org/techniques/T1578/003,IaaS
+T1593.003,Code Repositories,True,https://attack.mitre.org/techniques/T1593/003,PRE
+T1574.005,Executable Installer File Permissions Weakness,True,https://attack.mitre.org/techniques/T1574/005,Windows
+T1546.008,Accessibility Features,True,https://attack.mitre.org/techniques/T1546/008,Windows
+T1496.002,Bandwidth Hijacking,True,https://attack.mitre.org/techniques/T1496/002,Linux|Windows|macOS|IaaS|Containers
+T1087,Account Discovery,False,https://attack.mitre.org/techniques/T1087,ESXi|IaaS|Identity Provider|Linux|macOS|Office Suite|SaaS|Windows
+T1090,Proxy,False,https://attack.mitre.org/techniques/T1090,ESXi|Linux|macOS|Network Devices|Windows
+T1059,Command and Scripting Interpreter,False,https://attack.mitre.org/techniques/T1059,Containers|ESXi|IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1204.005,Malicious Library,True,https://attack.mitre.org/techniques/T1204/005,Linux|macOS|Windows
+T1685.005,Clear Windows Event Logs,True,https://attack.mitre.org/techniques/T1685/005,Windows
+T1136.002,Domain Account,True,https://attack.mitre.org/techniques/T1136/002,Linux|macOS|Windows
+T1564.014,Extended Attributes,True,https://attack.mitre.org/techniques/T1564/014,Linux|macOS
+T1589.003,Employee Names,True,https://attack.mitre.org/techniques/T1589/003,PRE
+T1677,Poisoned Pipeline Execution,False,https://attack.mitre.org/techniques/T1677,SaaS
+T1482,Domain Trust Discovery,False,https://attack.mitre.org/techniques/T1482,Windows
+T1558.001,Golden Ticket,True,https://attack.mitre.org/techniques/T1558/001,Windows
+T1020,Automated Exfiltration,False,https://attack.mitre.org/techniques/T1020,Linux|macOS|Network Devices|Windows
+T1592.004,Client Configurations,True,https://attack.mitre.org/techniques/T1592/004,PRE
+T1219.001,IDE Tunneling,True,https://attack.mitre.org/techniques/T1219/001,Linux|macOS|Windows
+T1036.002,Right-to-Left Override,True,https://attack.mitre.org/techniques/T1036/002,Linux|macOS|Windows
+T1588.001,Malware,True,https://attack.mitre.org/techniques/T1588/001,PRE
+T1027.017,SVG Smuggling,True,https://attack.mitre.org/techniques/T1027/017,Linux|macOS|Windows
+T1542.002,Component Firmware,True,https://attack.mitre.org/techniques/T1542/002,Windows|Linux|macOS
+T1070,Indicator Removal,False,https://attack.mitre.org/techniques/T1070,Containers|ESXi|Linux|macOS|Network Devices|Office Suite|Windows
+T1048.001,Exfiltration Over Symmetric Encrypted Non-C2 Protocol,True,https://attack.mitre.org/techniques/T1048/001,Linux|macOS|Windows|ESXi
+T1137.001,Office Template Macros,True,https://attack.mitre.org/techniques/T1137/001,Office Suite|Windows
+T1583.003,Virtual Private Server,True,https://attack.mitre.org/techniques/T1583/003,PRE
+T1213.001,Confluence,True,https://attack.mitre.org/techniques/T1213/001,SaaS
+T1550.003,Pass the Ticket,True,https://attack.mitre.org/techniques/T1550/003,Windows
+T1609,Container Administration Command,False,https://attack.mitre.org/techniques/T1609,Containers
+T1083,File and Directory Discovery,False,https://attack.mitre.org/techniques/T1083,ESXi|Linux|macOS|Network Devices|Windows
+T1568,Dynamic Resolution,False,https://attack.mitre.org/techniques/T1568,ESXi|Linux|macOS|Windows
+T1036.004,Masquerade Task or Service,True,https://attack.mitre.org/techniques/T1036/004,Linux|macOS|Windows
+T1055.004,Asynchronous Procedure Call,True,https://attack.mitre.org/techniques/T1055/004,Windows
+T1020.001,Traffic Duplication,True,https://attack.mitre.org/techniques/T1020/001,Network Devices|IaaS
+T1647,Plist File Modification,False,https://attack.mitre.org/techniques/T1647,macOS
+T1127.003,JamPlus,True,https://attack.mitre.org/techniques/T1127/003,Windows
+T1546.009,AppCert DLLs,True,https://attack.mitre.org/techniques/T1546/009,Windows
+T1114.003,Email Forwarding Rule,True,https://attack.mitre.org/techniques/T1114/003,Linux|macOS|Office Suite|Windows
+T1074,Data Staged,False,https://attack.mitre.org/techniques/T1074,ESXi|IaaS|Linux|macOS|Windows
+T1649,Steal or Forge Authentication Certificates,False,https://attack.mitre.org/techniques/T1649,Windows|Linux|macOS|Identity Provider
+T1098.005,Device Registration,True,https://attack.mitre.org/techniques/T1098/005,Windows|Identity Provider
+T1049,System Network Connections Discovery,False,https://attack.mitre.org/techniques/T1049,ESXi|IaaS|Linux|macOS|Network Devices|Windows
+T1584,Compromise Infrastructure,False,https://attack.mitre.org/techniques/T1584,PRE
+T1553.005,Mark-of-the-Web Bypass,True,https://attack.mitre.org/techniques/T1553/005,Windows
+T1600.002,Disable Crypto Hardware,True,https://attack.mitre.org/techniques/T1600/002,Network Devices
+T1542,Pre-OS Boot,False,https://attack.mitre.org/techniques/T1542,Linux|macOS|Network Devices|Windows
+T1612,Build Image on Host,False,https://attack.mitre.org/techniques/T1612,Containers
+T1055.002,Portable Executable Injection,True,https://attack.mitre.org/techniques/T1055/002,Windows
+T1218.012,Verclsid,True,https://attack.mitre.org/techniques/T1218/012,Windows
+T1586,Compromise Accounts,False,https://attack.mitre.org/techniques/T1586,PRE
+T1569.001,Launchctl,True,https://attack.mitre.org/techniques/T1569/001,macOS
+T1584.005,Botnet,True,https://attack.mitre.org/techniques/T1584/005,PRE
+T1059.008,Network Device CLI,True,https://attack.mitre.org/techniques/T1059/008,Network Devices
+T1552.003,Shell History,True,https://attack.mitre.org/techniques/T1552/003,Linux|macOS|Windows
+T1559.003,XPC Services,True,https://attack.mitre.org/techniques/T1559/003,macOS
+T1497,Virtualization/Sandbox Evasion,False,https://attack.mitre.org/techniques/T1497,Linux|macOS|Windows
+T1102,Web Service,False,https://attack.mitre.org/techniques/T1102,ESXi|Linux|macOS|Windows
+T1552.001,Credentials In Files,True,https://attack.mitre.org/techniques/T1552/001,Containers|IaaS|Linux|macOS|Windows
+T1568.003,DNS Calculation,True,https://attack.mitre.org/techniques/T1568/003,ESXi|Linux|macOS|Windows
+T1218.005,Mshta,True,https://attack.mitre.org/techniques/T1218/005,Windows
+T1547.015,Login Items,True,https://attack.mitre.org/techniques/T1547/015,macOS
+T1608,Stage Capabilities,False,https://attack.mitre.org/techniques/T1608,PRE
+T1608.005,Link Target,True,https://attack.mitre.org/techniques/T1608/005,PRE
+T1104,Multi-Stage Channels,False,https://attack.mitre.org/techniques/T1104,Linux|macOS|Windows|ESXi
+T1657,Financial Theft,False,https://attack.mitre.org/techniques/T1657,Linux|macOS|Office Suite|SaaS|Windows
+T1480,Execution Guardrails,False,https://attack.mitre.org/techniques/T1480,ESXi|Linux|macOS|Windows
+T1619,Cloud Storage Object Discovery,False,https://attack.mitre.org/techniques/T1619,IaaS
+T1606.001,Web Cookies,True,https://attack.mitre.org/techniques/T1606/001,Linux|macOS|Windows|SaaS|IaaS
+T1654,Log Enumeration,False,https://attack.mitre.org/techniques/T1654,ESXi|IaaS|Linux|macOS|Windows
+T1134.001,Token Impersonation/Theft,True,https://attack.mitre.org/techniques/T1134/001,Windows
+T1567.001,Exfiltration to Code Repository,True,https://attack.mitre.org/techniques/T1567/001,ESXi|Linux|macOS|Windows
+T1021.007,Cloud Services,True,https://attack.mitre.org/techniques/T1021/007,IaaS|Identity Provider|Office Suite|SaaS
+T1205.001,Port Knocking,True,https://attack.mitre.org/techniques/T1205/001,Linux|macOS|Network Devices|Windows
+T1027.012,LNK Icon Smuggling,True,https://attack.mitre.org/techniques/T1027/012,Windows
+T1583.006,Web Services,True,https://attack.mitre.org/techniques/T1583/006,PRE
+T1528,Steal Application Access Token,False,https://attack.mitre.org/techniques/T1528,Containers|IaaS|Identity Provider|Office Suite|SaaS
+T1598.002,Spearphishing Attachment,True,https://attack.mitre.org/techniques/T1598/002,PRE
+T1098.001,Additional Cloud Credentials,True,https://attack.mitre.org/techniques/T1098/001,IaaS|Identity Provider|SaaS
+T1204,User Execution,False,https://attack.mitre.org/techniques/T1204,Linux|Windows|macOS|IaaS|Containers
+T1491.001,Internal Defacement,True,https://attack.mitre.org/techniques/T1491/001,ESXi|Linux|macOS|Windows
+T1564.002,Hidden Users,True,https://attack.mitre.org/techniques/T1564/002,Linux|macOS|Windows
+T1134.003,Make and Impersonate Token,True,https://attack.mitre.org/techniques/T1134/003,Windows
+T1552.006,Group Policy Preferences,True,https://attack.mitre.org/techniques/T1552/006,Windows
+T1048.002,Exfiltration Over Asymmetric Encrypted Non-C2 Protocol,True,https://attack.mitre.org/techniques/T1048/002,ESXi|Linux|macOS|Windows
+T1087.004,Cloud Account,True,https://attack.mitre.org/techniques/T1087/004,IaaS|Identity Provider|Office Suite|SaaS
+T1683.002,Audio-Visual Content,True,https://attack.mitre.org/techniques/T1683/002,PRE
+T1057,Process Discovery,False,https://attack.mitre.org/techniques/T1057,ESXi|Linux|macOS|Network Devices|Windows
+T1556.008,Network Provider DLL,True,https://attack.mitre.org/techniques/T1556/008,Windows
+T1546.003,Windows Management Instrumentation Event Subscription,True,https://attack.mitre.org/techniques/T1546/003,Windows
+T1596.004,CDNs,True,https://attack.mitre.org/techniques/T1596/004,PRE
+T1497.002,User Activity Based Checks,True,https://attack.mitre.org/techniques/T1497/002,Linux|macOS|Windows
+T1496.004,Cloud Service Hijacking,True,https://attack.mitre.org/techniques/T1496/004,SaaS
+T1585.003,Cloud Accounts,True,https://attack.mitre.org/techniques/T1585/003,PRE
+T1072,Software Deployment Tools,False,https://attack.mitre.org/techniques/T1072,Linux|macOS|Network Devices|SaaS|Windows
+T1041,Exfiltration Over C2 Channel,False,https://attack.mitre.org/techniques/T1041,ESXi|Linux|macOS|Windows
+T1134.004,Parent PID Spoofing,True,https://attack.mitre.org/techniques/T1134/004,Windows
+T1591,Gather Victim Org Information,False,https://attack.mitre.org/techniques/T1591,PRE
+T1606,Forge Web Credentials,False,https://attack.mitre.org/techniques/T1606,SaaS|Windows|macOS|Linux|IaaS|Office Suite|Identity Provider
+T1621,Multi-Factor Authentication Request Generation,False,https://attack.mitre.org/techniques/T1621,Windows|Linux|macOS|IaaS|SaaS|Office Suite|Identity Provider
+T1554,Compromise Host Software Binary,False,https://attack.mitre.org/techniques/T1554,ESXi|Linux|macOS|Windows
+T1552.008,Chat Messages,True,https://attack.mitre.org/techniques/T1552/008,SaaS|Office Suite
+T1059.001,PowerShell,True,https://attack.mitre.org/techniques/T1059/001,Windows
+T1546.001,Change Default File Association,True,https://attack.mitre.org/techniques/T1546/001,Windows
+T1055.014,VDSO Hijacking,True,https://attack.mitre.org/techniques/T1055/014,Linux
+T1071.002,File Transfer Protocols,True,https://attack.mitre.org/techniques/T1071/002,ESXi|Linux|macOS|Network Devices|Windows
+T1679,Selective Exclusion,False,https://attack.mitre.org/techniques/T1679,Windows
+T1212,Exploitation for Credential Access,False,https://attack.mitre.org/techniques/T1212,Linux|Windows|macOS|Identity Provider
+T1546.014,Emond,True,https://attack.mitre.org/techniques/T1546/014,macOS
+T1102.003,One-Way Communication,True,https://attack.mitre.org/techniques/T1102/003,Linux|macOS|Windows|ESXi
+T1590,Gather Victim Network Information,False,https://attack.mitre.org/techniques/T1590,PRE
+T1210,Exploitation of Remote Services,False,https://attack.mitre.org/techniques/T1210,Linux|Windows|macOS|ESXi
+T1534,Internal Spearphishing,False,https://attack.mitre.org/techniques/T1534,Linux|macOS|Office Suite|SaaS|Windows
+T1574.010,Services File Permissions Weakness,True,https://attack.mitre.org/techniques/T1574/010,Windows
+T1547.001,Registry Run Keys / Startup Folder,True,https://attack.mitre.org/techniques/T1547/001,Windows
+T1199,Trusted Relationship,False,https://attack.mitre.org/techniques/T1199,IaaS|Identity Provider|Linux|macOS|Office Suite|SaaS|Windows
+T1136.003,Cloud Account,True,https://attack.mitre.org/techniques/T1136/003,IaaS|SaaS|Office Suite|Identity Provider
+T1069.001,Local Groups,True,https://attack.mitre.org/techniques/T1069/001,Linux|macOS|Windows
+T1593,Search Open Websites/Domains,False,https://attack.mitre.org/techniques/T1593,PRE
+T1098,Account Manipulation,False,https://attack.mitre.org/techniques/T1098,Containers|ESXi|IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1048,Exfiltration Over Alternative Protocol,False,https://attack.mitre.org/techniques/T1048,ESXi|IaaS|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1547.006,Kernel Modules and Extensions,True,https://attack.mitre.org/techniques/T1547/006,macOS|Linux
+T1678,Delay Execution,False,https://attack.mitre.org/techniques/T1678,Linux|macOS|Windows
+T1056.002,GUI Input Capture,True,https://attack.mitre.org/techniques/T1056/002,Linux|macOS|Windows
+T1686.002,Network Device Firewall,True,https://attack.mitre.org/techniques/T1686/002,Network Devices
+T1588.002,Tool,True,https://attack.mitre.org/techniques/T1588/002,PRE
+T1052.001,Exfiltration over USB,True,https://attack.mitre.org/techniques/T1052/001,Linux|Windows|macOS
+T1574.013,KernelCallbackTable,True,https://attack.mitre.org/techniques/T1574/013,Windows
+T1597,Search Closed Sources,False,https://attack.mitre.org/techniques/T1597,PRE
+T1053.006,Systemd Timers,True,https://attack.mitre.org/techniques/T1053/006,Linux
+T1566,Phishing,False,https://attack.mitre.org/techniques/T1566,Identity Provider|Linux|macOS|Office Suite|SaaS|Windows
+T1542.004,ROMMONkit,True,https://attack.mitre.org/techniques/T1542/004,Network Devices
+T1218.001,Compiled HTML File,True,https://attack.mitre.org/techniques/T1218/001,Windows
+T1496.001,Compute Hijacking,True,https://attack.mitre.org/techniques/T1496/001,Windows|IaaS|Linux|macOS|Containers
+T1070.005,Network Share Connection Removal,True,https://attack.mitre.org/techniques/T1070/005,Windows
+T1090.003,Multi-hop Proxy,True,https://attack.mitre.org/techniques/T1090/003,ESXi|Linux|macOS|Network Devices|Windows
+T1110,Brute Force,False,https://attack.mitre.org/techniques/T1110,Containers|ESXi|IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1059.004,Unix Shell,True,https://attack.mitre.org/techniques/T1059/004,ESXi|Linux|macOS|Network Devices
+T1137.003,Outlook Forms,True,https://attack.mitre.org/techniques/T1137/003,Windows|Office Suite
+T1219.003,Remote Access Hardware,True,https://attack.mitre.org/techniques/T1219/003,Linux|macOS|Windows
+T1565,Data Manipulation,False,https://attack.mitre.org/techniques/T1565,Linux|macOS|Windows
+T1559,Inter-Process Communication,False,https://attack.mitre.org/techniques/T1559,Linux|macOS|Windows
+T1001,Data Obfuscation,False,https://attack.mitre.org/techniques/T1001,ESXi|Linux|macOS|Windows
+T1039,Data from Network Shared Drive,False,https://attack.mitre.org/techniques/T1039,Linux|macOS|Windows
+T1584.006,Web Services,True,https://attack.mitre.org/techniques/T1584/006,PRE
+T1601,Modify System Image,False,https://attack.mitre.org/techniques/T1601,Network Devices
+T1574,Hijack Execution Flow,False,https://attack.mitre.org/techniques/T1574,Linux|macOS|Windows
+T1036.012,Browser Fingerprint,True,https://attack.mitre.org/techniques/T1036/012,Linux|macOS|Windows
+T1059.011,Lua,True,https://attack.mitre.org/techniques/T1059/011,Linux|Network Devices|Windows|macOS
+T1027.005,Indicator Removal from Tools,True,https://attack.mitre.org/techniques/T1027/005,Linux|macOS|Windows
+T1204.003,Malicious Image,True,https://attack.mitre.org/techniques/T1204/003,IaaS|Containers
+T1543.005,Container Service,True,https://attack.mitre.org/techniques/T1543/005,Containers
+T1078,Valid Accounts,False,https://attack.mitre.org/techniques/T1078,Containers|ESXi|IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1571,Non-Standard Port,False,https://attack.mitre.org/techniques/T1571,ESXi|Linux|macOS|Windows
+T1585.001,Social Media Accounts,True,https://attack.mitre.org/techniques/T1585/001,PRE
+T1055.012,Process Hollowing,True,https://attack.mitre.org/techniques/T1055/012,Windows
+T1068,Exploitation for Privilege Escalation,False,https://attack.mitre.org/techniques/T1068,Containers|Linux|macOS|Windows
+T1564.009,Resource Forking,True,https://attack.mitre.org/techniques/T1564/009,macOS
+T1531,Account Access Removal,False,https://attack.mitre.org/techniques/T1531,Linux|macOS|Windows|SaaS|IaaS|Office Suite|ESXi
+T1110.004,Credential Stuffing,True,https://attack.mitre.org/techniques/T1110/004,Containers|ESXi|IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1027,Obfuscated Files or Information,False,https://attack.mitre.org/techniques/T1027,ESXi|Linux|macOS|Network Devices|Windows
+T1556.006,Multi-Factor Authentication,True,https://attack.mitre.org/techniques/T1556/006,IaaS|Identity Provider|Linux|macOS|Office Suite|SaaS|Windows
+T1114.002,Remote Email Collection,True,https://attack.mitre.org/techniques/T1114/002,Office Suite|Windows
+T1505.004,IIS Components,True,https://attack.mitre.org/techniques/T1505/004,Windows
+T1036.001,Invalid Code Signature,True,https://attack.mitre.org/techniques/T1036/001,macOS|Windows
+T1683,Generate Content,False,https://attack.mitre.org/techniques/T1683,PRE
+T1564.006,Run Virtual Instance,True,https://attack.mitre.org/techniques/T1564/006,ESXi|Linux|macOS|Windows
+T1027.014,Polymorphic Code,True,https://attack.mitre.org/techniques/T1027/014,Linux|macOS|Windows
+T1201,Password Policy Discovery,False,https://attack.mitre.org/techniques/T1201,Windows|Linux|macOS|IaaS|Network Devices|Identity Provider|SaaS|Office Suite
+T1546,Event Triggered Execution,False,https://attack.mitre.org/techniques/T1546,Linux|macOS|Windows|SaaS|IaaS|Office Suite
+T1546.004,Unix Shell Configuration Modification,True,https://attack.mitre.org/techniques/T1546/004,Linux|macOS
+T1187,Forced Authentication,False,https://attack.mitre.org/techniques/T1187,Windows
+T1134.005,SID-History Injection,True,https://attack.mitre.org/techniques/T1134/005,Windows
+T1599,Network Boundary Bridging,False,https://attack.mitre.org/techniques/T1599,Network Devices
+T1486,Data Encrypted for Impact,False,https://attack.mitre.org/techniques/T1486,ESXi|IaaS|Linux|macOS|Windows
+T1690,Prevent Command History Logging,False,https://attack.mitre.org/techniques/T1690,ESXi|Linux|macOS|Network Devices|Windows
+T1553,Subvert Trust Controls,False,https://attack.mitre.org/techniques/T1553,Linux|macOS|Windows
+T1548.004,Elevated Execution with Prompt,True,https://attack.mitre.org/techniques/T1548/004,macOS
+T1592.003,Firmware,True,https://attack.mitre.org/techniques/T1592/003,PRE
+T1573,Encrypted Channel,False,https://attack.mitre.org/techniques/T1573,ESXi|Linux|macOS|Network Devices|Windows
+T1547.002,Authentication Package,True,https://attack.mitre.org/techniques/T1547/002,Windows
+T1218.010,Regsvr32,True,https://attack.mitre.org/techniques/T1218/010,Windows
+T1567.003,Exfiltration to Text Storage Sites,True,https://attack.mitre.org/techniques/T1567/003,Linux|macOS|Windows|ESXi
+T1592.002,Software,True,https://attack.mitre.org/techniques/T1592/002,PRE
+T1056,Input Capture,False,https://attack.mitre.org/techniques/T1056,Linux|macOS|Network Devices|Windows
+T1566.004,Spearphishing Voice,True,https://attack.mitre.org/techniques/T1566/004,Linux|macOS|Windows|Identity Provider
+T1587.004,Exploits,True,https://attack.mitre.org/techniques/T1587/004,PRE
+T1685,Disable or Modify Tools,False,https://attack.mitre.org/techniques/T1685,Containers|ESXi|IaaS|Linux|macOS|Network Devices|Windows
+T1593.001,Social Media,True,https://attack.mitre.org/techniques/T1593/001,PRE
+T1213.004,Customer Relationship Management Software,True,https://attack.mitre.org/techniques/T1213/004,SaaS
+T1546.015,Component Object Model Hijacking,True,https://attack.mitre.org/techniques/T1546/015,Windows
+T1589.001,Credentials,True,https://attack.mitre.org/techniques/T1589/001,PRE
+T1195.002,Compromise Software Supply Chain,True,https://attack.mitre.org/techniques/T1195/002,Linux|Windows|macOS
+T1036.003,Rename Legitimate Utilities,True,https://attack.mitre.org/techniques/T1036/003,Linux|macOS|Windows
+T1102.002,Bidirectional Communication,True,https://attack.mitre.org/techniques/T1102/002,ESXi|Linux|macOS|Windows
+T1203,Exploitation for Client Execution,False,https://attack.mitre.org/techniques/T1203,Linux|macOS|Windows
+T1595.003,Wordlist Scanning,True,https://attack.mitre.org/techniques/T1595/003,PRE
+T1667,Email Bombing,False,https://attack.mitre.org/techniques/T1667,Linux|Office Suite|Windows|macOS
+T1137.004,Outlook Home Page,True,https://attack.mitre.org/techniques/T1137/004,Windows|Office Suite
+T1573.002,Asymmetric Cryptography,True,https://attack.mitre.org/techniques/T1573/002,ESXi|Linux|macOS|Network Devices|Windows
+T1567.002,Exfiltration to Cloud Storage,True,https://attack.mitre.org/techniques/T1567/002,ESXi|Linux|macOS|Windows
+T1570,Lateral Tool Transfer,False,https://attack.mitre.org/techniques/T1570,ESXi|Linux|macOS|Windows
+T1574.009,Path Interception by Unquoted Path,True,https://attack.mitre.org/techniques/T1574/009,Windows
+T1608.003,Install Digital Certificate,True,https://attack.mitre.org/techniques/T1608/003,PRE
+T1037.005,Startup Items,True,https://attack.mitre.org/techniques/T1037/005,macOS
+T1614.001,System Language Discovery,True,https://attack.mitre.org/techniques/T1614/001,Linux|macOS|Windows
+T1095,Non-Application Layer Protocol,False,https://attack.mitre.org/techniques/T1095,ESXi|Linux|macOS|Network Devices|Windows
+T1059.013,Container CLI/API,True,https://attack.mitre.org/techniques/T1059/013,Containers
+T1027.003,Steganography,True,https://attack.mitre.org/techniques/T1027/003,Linux|macOS|Windows
+T1584.002,DNS Server,True,https://attack.mitre.org/techniques/T1584/002,PRE
+T1671,Cloud Application Integration,False,https://attack.mitre.org/techniques/T1671,Office Suite|SaaS
+T1001.003,Protocol or Service Impersonation,True,https://attack.mitre.org/techniques/T1001/003,ESXi|Linux|macOS|Windows
+T1012,Query Registry,False,https://attack.mitre.org/techniques/T1012,Windows
+T1030,Data Transfer Size Limits,False,https://attack.mitre.org/techniques/T1030,Linux|macOS|Windows|ESXi
+T1550.004,Web Session Cookie,True,https://attack.mitre.org/techniques/T1550/004,IaaS|Office Suite|SaaS
+T1078.002,Domain Accounts,True,https://attack.mitre.org/techniques/T1078/002,ESXi|Linux|macOS|Windows
+T1218.009,Regsvcs/Regasm,True,https://attack.mitre.org/techniques/T1218/009,Windows
+T1546.018,Python Startup Hooks,True,https://attack.mitre.org/techniques/T1546/018,Linux|macOS|Windows
+T1553.004,Install Root Certificate,True,https://attack.mitre.org/techniques/T1553/004,Linux|macOS|Windows
+T1037.003,Network Logon Script,True,https://attack.mitre.org/techniques/T1037/003,Windows
+T1499,Endpoint Denial of Service,False,https://attack.mitre.org/techniques/T1499,Windows|Linux|macOS|Containers|IaaS
+T1027.004,Compile After Delivery,True,https://attack.mitre.org/techniques/T1027/004,Linux|macOS|Windows
+T1688,Safe Mode Boot,False,https://attack.mitre.org/techniques/T1688,Windows
+T1614,System Location Discovery,False,https://attack.mitre.org/techniques/T1614,IaaS|Linux|macOS|Windows
+T1564.007,VBA Stomping,True,https://attack.mitre.org/techniques/T1564/007,Linux|macOS|Windows
+T1197,BITS Jobs,False,https://attack.mitre.org/techniques/T1197,Windows
+T1127.001,MSBuild,True,https://attack.mitre.org/techniques/T1127/001,Windows
+T1578.005,Modify Cloud Compute Configurations,True,https://attack.mitre.org/techniques/T1578/005,IaaS
+T1090.004,Domain Fronting,True,https://attack.mitre.org/techniques/T1090/004,Linux|macOS|Windows|ESXi
+T1557.002,ARP Cache Poisoning,True,https://attack.mitre.org/techniques/T1557/002,Linux|Windows|macOS
+T1518.001,Security Software Discovery,True,https://attack.mitre.org/techniques/T1518/001,IaaS|Linux|macOS|Windows
+T1564.003,Hidden Window,True,https://attack.mitre.org/techniques/T1564/003,Linux|macOS|Windows
+T1127.002,ClickOnce,True,https://attack.mitre.org/techniques/T1127/002,Windows
+T1059.006,Python,True,https://attack.mitre.org/techniques/T1059/006,ESXi|Linux|macOS|Windows
+T1070.010,Relocate Malware,True,https://attack.mitre.org/techniques/T1070/010,Linux|macOS|Network Devices|Windows
+T1591.004,Identify Roles,True,https://attack.mitre.org/techniques/T1591/004,PRE
+T1132,Data Encoding,False,https://attack.mitre.org/techniques/T1132,ESXi|Linux|macOS|Windows
+T1546.010,AppInit DLLs,True,https://attack.mitre.org/techniques/T1546/010,Windows
+T1598,Phishing for Information,False,https://attack.mitre.org/techniques/T1598,PRE
+T1496,Resource Hijacking,False,https://attack.mitre.org/techniques/T1496,Windows|IaaS|Linux|macOS|Containers|SaaS
+T1684.001,Impersonation,True,https://attack.mitre.org/techniques/T1684/001,Linux|macOS|Office Suite|SaaS|Windows
+T1585,Establish Accounts,False,https://attack.mitre.org/techniques/T1585,PRE
+T1588,Obtain Capabilities,False,https://attack.mitre.org/techniques/T1588,PRE
+T1546.002,Screensaver,True,https://attack.mitre.org/techniques/T1546/002,Windows
+T1556.009,Conditional Access Policies,True,https://attack.mitre.org/techniques/T1556/009,IaaS|Identity Provider
+T1578.002,Create Cloud Instance,True,https://attack.mitre.org/techniques/T1578/002,IaaS
+T1555.006,Cloud Secrets Management Stores,True,https://attack.mitre.org/techniques/T1555/006,IaaS
+T1213.003,Code Repositories,True,https://attack.mitre.org/techniques/T1213/003,SaaS
+T1565.002,Transmitted Data Manipulation,True,https://attack.mitre.org/techniques/T1565/002,Linux|macOS|Windows
+T1003.008,/etc/passwd and /etc/shadow,True,https://attack.mitre.org/techniques/T1003/008,Linux
+T1543.001,Launch Agent,True,https://attack.mitre.org/techniques/T1543/001,macOS
+T1569,System Services,False,https://attack.mitre.org/techniques/T1569,Windows|macOS|Linux
+T1059.003,Windows Command Shell,True,https://attack.mitre.org/techniques/T1059/003,Windows
+T1055.009,Proc Memory,True,https://attack.mitre.org/techniques/T1055/009,Linux
+T1650,Acquire Access,False,https://attack.mitre.org/techniques/T1650,PRE
+T1601.001,Patch System Image,True,https://attack.mitre.org/techniques/T1601/001,Network Devices
+T1558.002,Silver Ticket,True,https://attack.mitre.org/techniques/T1558/002,Windows
+T1213,Data from Information Repositories,False,https://attack.mitre.org/techniques/T1213,Linux|Windows|macOS|SaaS|IaaS|Office Suite
+T1070.009,Clear Persistence,True,https://attack.mitre.org/techniques/T1070/009,ESXi|Linux|macOS|Windows
+T1059.012,Hypervisor CLI,True,https://attack.mitre.org/techniques/T1059/012,ESXi
+T1555.004,Windows Credential Manager,True,https://attack.mitre.org/techniques/T1555/004,Windows
+T1036.010,Masquerade Account Name,True,https://attack.mitre.org/techniques/T1036/010,Containers|IaaS|Identity Provider|Linux|macOS|Office Suite|SaaS|Windows
+T1200,Hardware Additions,False,https://attack.mitre.org/techniques/T1200,Windows|Linux|macOS
+T1219.002,Remote Desktop Software,True,https://attack.mitre.org/techniques/T1219/002,Linux|macOS|Windows
+T1505,Server Software Component,False,https://attack.mitre.org/techniques/T1505,Windows|Linux|macOS|Network Devices|ESXi
+T1485,Data Destruction,False,https://attack.mitre.org/techniques/T1485,Containers|ESXi|IaaS|Linux|macOS|Windows
+T1132.002,Non-Standard Encoding,True,https://attack.mitre.org/techniques/T1132/002,ESXi|Linux|macOS|Windows
+T1556.001,Domain Controller Authentication,True,https://attack.mitre.org/techniques/T1556/001,Windows
+T1537,Transfer Data to Cloud Account,False,https://attack.mitre.org/techniques/T1537,IaaS|Office Suite|SaaS
+T1027.006,HTML Smuggling,True,https://attack.mitre.org/techniques/T1027/006,Linux|macOS|Windows
+T1556.005,Reversible Encryption,True,https://attack.mitre.org/techniques/T1556/005,Windows
+T1027.010,Command Obfuscation,True,https://attack.mitre.org/techniques/T1027/010,Linux|macOS|Windows
+T1070.004,File Deletion,True,https://attack.mitre.org/techniques/T1070/004,ESXi|Linux|macOS|Windows
+T1189,Drive-by Compromise,False,https://attack.mitre.org/techniques/T1189,Identity Provider|Linux|macOS|Windows
+T1498,Network Denial of Service,False,https://attack.mitre.org/techniques/T1498,Windows|IaaS|Linux|macOS|Containers
+T1651,Cloud Administration Command,False,https://attack.mitre.org/techniques/T1651,IaaS
+T1546.016,Installer Packages,True,https://attack.mitre.org/techniques/T1546/016,Linux|macOS|Windows
+T1595.001,Scanning IP Blocks,True,https://attack.mitre.org/techniques/T1595/001,PRE
+T1221,Template Injection,False,https://attack.mitre.org/techniques/T1221,Windows
+T1037.004,RC Scripts,True,https://attack.mitre.org/techniques/T1037/004,macOS|Linux|Network Devices|ESXi
+T1134,Access Token Manipulation,False,https://attack.mitre.org/techniques/T1134,Windows
+T1111,Multi-Factor Authentication Interception,False,https://attack.mitre.org/techniques/T1111,Linux|macOS|Windows
+T1027.002,Software Packing,True,https://attack.mitre.org/techniques/T1027/002,Linux|macOS|Windows
+T1584.007,Serverless,True,https://attack.mitre.org/techniques/T1584/007,PRE
+T1071.001,Web Protocols,True,https://attack.mitre.org/techniques/T1071/001,ESXi|Linux|macOS|Network Devices|Windows
+T1059.005,Visual Basic,True,https://attack.mitre.org/techniques/T1059/005,Linux|macOS|Windows
+T1564.005,Hidden File System,True,https://attack.mitre.org/techniques/T1564/005,Linux|macOS|Windows
+T1543.002,Systemd Service,True,https://attack.mitre.org/techniques/T1543/002,Linux
+T1668,Exclusive Control,False,https://attack.mitre.org/techniques/T1668,Linux|macOS|Windows
+T1563.002,RDP Hijacking,True,https://attack.mitre.org/techniques/T1563/002,Windows
+T1136,Create Account,False,https://attack.mitre.org/techniques/T1136,Windows|IaaS|Linux|macOS|Network Devices|Containers|SaaS|Office Suite|Identity Provider|ESXi
+T1547.013,XDG Autostart Entries,True,https://attack.mitre.org/techniques/T1547/013,Linux
+T1584.004,Server,True,https://attack.mitre.org/techniques/T1584/004,PRE
+T1526,Cloud Service Discovery,False,https://attack.mitre.org/techniques/T1526,IaaS|Identity Provider|Office Suite|SaaS
+T1204.004,Malicious Copy and Paste,True,https://attack.mitre.org/techniques/T1204/004,Linux|macOS|Windows
+T1018,Remote System Discovery,False,https://attack.mitre.org/techniques/T1018,ESXi|Linux|macOS|Network Devices|Windows
+T1046,Network Service Discovery,False,https://attack.mitre.org/techniques/T1046,Containers|IaaS|Linux|macOS|Network Devices|Windows
+T1590.001,Domain Properties,True,https://attack.mitre.org/techniques/T1590/001,PRE
+T1518,Software Discovery,False,https://attack.mitre.org/techniques/T1518,ESXi|IaaS|Linux|macOS|Windows
+T1538,Cloud Service Dashboard,False,https://attack.mitre.org/techniques/T1538,IaaS|SaaS|Office Suite|Identity Provider
+T1055.005,Thread Local Storage,True,https://attack.mitre.org/techniques/T1055/005,Windows
+T1622,Debugger Evasion,False,https://attack.mitre.org/techniques/T1622,Linux|macOS|Windows
+T1036.006,Space after Filename,True,https://attack.mitre.org/techniques/T1036/006,Linux|macOS
+T1547.007,Re-opened Applications,True,https://attack.mitre.org/techniques/T1547/007,macOS
+T1608.006,SEO Poisoning,True,https://attack.mitre.org/techniques/T1608/006,PRE
+T1550.002,Pass the Hash,True,https://attack.mitre.org/techniques/T1550/002,Windows
+T1052,Exfiltration Over Physical Medium,False,https://attack.mitre.org/techniques/T1052,Linux|macOS|Windows
+T1105,Ingress Tool Transfer,False,https://attack.mitre.org/techniques/T1105,ESXi|Linux|macOS|Network Devices|Windows
+T1216.002,SyncAppvPublishingServer,True,https://attack.mitre.org/techniques/T1216/002,Windows
+T1098.002,Additional Email Delegate Permissions,True,https://attack.mitre.org/techniques/T1098/002,Windows|Office Suite
+T1588.003,Code Signing Certificates,True,https://attack.mitre.org/techniques/T1588/003,PRE
+T1648,Serverless Execution,False,https://attack.mitre.org/techniques/T1648,SaaS|IaaS|Office Suite
+T1548.006,TCC Manipulation,True,https://attack.mitre.org/techniques/T1548/006,macOS
+T1027.018,Invisible Unicode,True,https://attack.mitre.org/techniques/T1027/018,Linux|macOS|Windows
+T1055.008,Ptrace System Calls,True,https://attack.mitre.org/techniques/T1055/008,Linux
+T1653,Power Settings,False,https://attack.mitre.org/techniques/T1653,Windows|Linux|macOS|Network Devices
+T1027.007,Dynamic API Resolution,True,https://attack.mitre.org/techniques/T1027/007,Windows
+T1021.001,Remote Desktop Protocol,True,https://attack.mitre.org/techniques/T1021/001,Windows
+T1037.001,Logon Script (Windows),True,https://attack.mitre.org/techniques/T1037/001,Windows
+T1055.015,ListPlanting,True,https://attack.mitre.org/techniques/T1055/015,Windows
+T1665,Hide Infrastructure,False,https://attack.mitre.org/techniques/T1665,ESXi|Linux|macOS|Network Devices|Windows
+T1484,Domain or Tenant Policy Modification,False,https://attack.mitre.org/techniques/T1484,Windows|Identity Provider
+T1220,XSL Script Processing,False,https://attack.mitre.org/techniques/T1220,Windows
+T1596.005,Scan Databases,True,https://attack.mitre.org/techniques/T1596/005,PRE
+T1564.001,Hidden Files and Directories,True,https://attack.mitre.org/techniques/T1564/001,Linux|macOS|Windows
+T1578.001,Create Snapshot,True,https://attack.mitre.org/techniques/T1578/001,IaaS
+T1591.001,Determine Physical Locations,True,https://attack.mitre.org/techniques/T1591/001,PRE
+T1137.002,Office Test,True,https://attack.mitre.org/techniques/T1137/002,Windows|Office Suite
+T1587,Develop Capabilities,False,https://attack.mitre.org/techniques/T1587,PRE
+T1003.003,NTDS,True,https://attack.mitre.org/techniques/T1003/003,Windows
+T1686.001,Cloud Firewall,True,https://attack.mitre.org/techniques/T1686/001,IaaS
+T1602.001,SNMP (MIB Dump),True,https://attack.mitre.org/techniques/T1602/001,Network Devices
+T1686,Disable or Modify System Firewall,False,https://attack.mitre.org/techniques/T1686,ESXi|Linux|macOS|Network Devices|Windows
+T1001.002,Steganography,True,https://attack.mitre.org/techniques/T1001/002,Linux|macOS|Windows|ESXi
+T1204.001,Malicious Link,True,https://attack.mitre.org/techniques/T1204/001,Linux|macOS|Windows
+T1550.001,Application Access Token,True,https://attack.mitre.org/techniques/T1550/001,Containers|IaaS|Identity Provider|Office Suite|SaaS
+T1547.008,LSASS Driver,True,https://attack.mitre.org/techniques/T1547/008,Windows
+T1569.002,Service Execution,True,https://attack.mitre.org/techniques/T1569/002,Windows
+T1078.004,Cloud Accounts,True,https://attack.mitre.org/techniques/T1078/004,IaaS|Identity Provider|Office Suite|SaaS
+T1480.001,Environmental Keying,True,https://attack.mitre.org/techniques/T1480/001,Linux|Windows|macOS
+T1008,Fallback Channels,False,https://attack.mitre.org/techniques/T1008,ESXi|Linux|macOS|Windows
+T1680,Local Storage Discovery,False,https://attack.mitre.org/techniques/T1680,ESXi|IaaS|Linux|macOS|Windows
+T1564.004,NTFS File Attributes,True,https://attack.mitre.org/techniques/T1564/004,Windows
+T1558.003,Kerberoasting,True,https://attack.mitre.org/techniques/T1558/003,Windows
+T1003.006,DCSync,True,https://attack.mitre.org/techniques/T1003/006,Windows
+T1124,System Time Discovery,False,https://attack.mitre.org/techniques/T1124,ESXi|Linux|macOS|Network Devices|Windows
+T1053.002,At,True,https://attack.mitre.org/techniques/T1053/002,Windows|Linux|macOS
+T1055.001,Dynamic-link Library Injection,True,https://attack.mitre.org/techniques/T1055/001,Windows
+T1588.005,Exploits,True,https://attack.mitre.org/techniques/T1588/005,PRE
+T1556,Modify Authentication Process,False,https://attack.mitre.org/techniques/T1556,IaaS|Identity Provider|Linux|macOS|Network Devices|Office Suite|SaaS|Windows
+T1546.017,Udev Rules,True,https://attack.mitre.org/techniques/T1546/017,Linux
+T1056.004,Credential API Hooking,True,https://attack.mitre.org/techniques/T1056/004,Windows|Linux|macOS
+T1495,Firmware Corruption,False,https://attack.mitre.org/techniques/T1495,Linux|macOS|Network Devices|Windows
+T1490,Inhibit System Recovery,False,https://attack.mitre.org/techniques/T1490,Containers|ESXi|IaaS|Linux|macOS|Network Devices|Windows
+T1546.007,Netsh Helper DLL,True,https://attack.mitre.org/techniques/T1546/007,Windows
+T1566.003,Spearphishing via Service,True,https://attack.mitre.org/techniques/T1566/003,Linux|macOS|Windows
+T1090.001,Internal Proxy,True,https://attack.mitre.org/techniques/T1090/001,ESXi|Linux|macOS|Network Devices|Windows
+T1216,System Script Proxy Execution,False,https://attack.mitre.org/techniques/T1216,Windows
+T1102.001,Dead Drop Resolver,True,https://attack.mitre.org/techniques/T1102/001,ESXi|Linux|macOS|Windows
+T1001.001,Junk Data,True,https://attack.mitre.org/techniques/T1001/001,ESXi|Linux|macOS|Windows
+T1598.001,Spearphishing Service,True,https://attack.mitre.org/techniques/T1598/001,PRE
+T1505.006,vSphere Installation Bundles,True,https://attack.mitre.org/techniques/T1505/006,ESXi
+T1552.007,Container API,True,https://attack.mitre.org/techniques/T1552/007,Containers
+T1584.001,Domains,True,https://attack.mitre.org/techniques/T1584/001,PRE
+T1505.001,SQL Stored Procedures,True,https://attack.mitre.org/techniques/T1505/001,Windows|Linux
+T1556.004,Network Device Authentication,True,https://attack.mitre.org/techniques/T1556/004,Network Devices
+T1561.001,Disk Content Wipe,True,https://attack.mitre.org/techniques/T1561/001,Linux|macOS|Network Devices|Windows
+T1213.005,Messaging Applications,True,https://attack.mitre.org/techniques/T1213/005,Office Suite|SaaS
+T1048.003,Exfiltration Over Unencrypted Non-C2 Protocol,True,https://attack.mitre.org/techniques/T1048/003,ESXi|Linux|macOS|Network Devices|Windows
+T1027.015,Compression,True,https://attack.mitre.org/techniques/T1027/015,Linux|macOS|Windows
+T1574.004,Dylib Hijacking,True,https://attack.mitre.org/techniques/T1574/004,macOS
+T1601.002,Downgrade System Image,True,https://attack.mitre.org/techniques/T1601/002,Network Devices
+T1684.002,Email Spoofing,True,https://attack.mitre.org/techniques/T1684/002,Linux|macOS|Office Suite|Windows
+T1078.003,Local Accounts,True,https://attack.mitre.org/techniques/T1078/003,Containers|ESXi|Linux|macOS|Network Devices|Windows
+T1669,Wi-Fi Networks,False,https://attack.mitre.org/techniques/T1669,Linux|Network Devices|Windows|macOS
+T1211,Exploitation for Stealth,False,https://attack.mitre.org/techniques/T1211,Linux|Windows|macOS|SaaS|IaaS
+T1127,Trusted Developer Utilities Proxy Execution,False,https://attack.mitre.org/techniques/T1127,Windows
+T1529,System Shutdown/Reboot,False,https://attack.mitre.org/techniques/T1529,ESXi|Linux|macOS|Network Devices|Windows
+T1218.014,MMC,True,https://attack.mitre.org/techniques/T1218/014,Windows
+T1564.010,Process Argument Spoofing,True,https://attack.mitre.org/techniques/T1564/010,Windows
+T1574.012,COR_PROFILER,True,https://attack.mitre.org/techniques/T1574/012,Windows

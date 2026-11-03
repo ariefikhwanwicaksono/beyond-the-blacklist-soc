@@ -1,0 +1,16 @@
+tactic_shortname,name,url
+credential-access,Credential Access,https://attack.mitre.org/tactics/TA0006
+defense-impairment,Defense Impairment,https://attack.mitre.org/tactics/TA0112
+execution,Execution,https://attack.mitre.org/tactics/TA0002
+impact,Impact,https://attack.mitre.org/tactics/TA0040
+persistence,Persistence,https://attack.mitre.org/tactics/TA0003
+privilege-escalation,Privilege Escalation,https://attack.mitre.org/tactics/TA0004
+lateral-movement,Lateral Movement,https://attack.mitre.org/tactics/TA0008
+stealth,Stealth,https://attack.mitre.org/tactics/TA0005
+exfiltration,Exfiltration,https://attack.mitre.org/tactics/TA0010
+discovery,Discovery,https://attack.mitre.org/tactics/TA0007
+collection,Collection,https://attack.mitre.org/tactics/TA0009
+resource-development,Resource Development,https://attack.mitre.org/tactics/TA0042
+reconnaissance,Reconnaissance,https://attack.mitre.org/tactics/TA0043
+command-and-control,Command and Control,https://attack.mitre.org/tactics/TA0011
+initial-access,Initial Access,https://attack.mitre.org/tactics/TA0001

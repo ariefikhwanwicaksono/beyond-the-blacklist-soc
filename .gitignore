@@ -1,0 +1,37 @@
+# Environments, caches, OS files
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Raw and derived traffic: never commit (dataset terms; obtain from the original sources, see README)
+*.pcap
+*.pcapng
+*.pcap.bz2
+*.binetflow
+*.biargus
+layer1-maltrail-zeek/data/pcap_raw/*
+!layer1-maltrail-zeek/data/pcap_raw/CHECKSUMS.tsv
+layer1-maltrail-zeek/data/pcap_derived
+layer1-maltrail-zeek/data/pcap_extracted
+layer1-maltrail-zeek/data/zeek_out
+layer1-maltrail-zeek/data/ctu13_botnet42
+layer1-maltrail-zeek/data/ctu_normal32
+layer1-maltrail-zeek/data/ctu_normal33
+dataset
+layer2-behavior-features/uwf_filtered
+
+# Maltrail: upstream clone (install per tools/maltrail-patch/README.md), dated/aggregate logs, caches
+layer1-maltrail-zeek/tools/maltrail
+layer1-maltrail-zeek/data/maltrail_out/[0-9]*.log
+layer1-maltrail-zeek/data/maltrail_out/*.sqlite
+layer1-maltrail-zeek/data/maltrail_out/error.log
+
+# Third-party trail snapshot (only the MANIFEST with hashes is committed)
+layer1-maltrail-zeek/trails_snapshots/*.csv
+layer1-maltrail-zeek/trails_snapshots/*.confidence
+
+# ATT&CK STIX bundle (51 MB; fetched by fetch_attck.py)
+layer3-attck-neo4j/data/enterprise-attack*.json

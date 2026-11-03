@@ -1,0 +1,159 @@
+{
+  "methodology": "Xu(2022) Ch.3: RU(srcPort)/RU(dstPort) eps=0.2, RU(dstIP) eps=0.3, BC = 9*L(srcPort)+3*L(dstPort)+L(dstIP), windows=5min relative to each host's own first timestamp, valid window >=10 flows, rare BC = pooled frequency < 3% of total windows (data-driven, not hardcoded).",
+  "total_windows": 379,
+  "pooled_bc_distribution": {
+    "15": 1,
+    "18": 25,
+    "19": 2,
+    "21": 1,
+    "22": 204,
+    "23": 60,
+    "24": 1,
+    "25": 20,
+    "26": 65
+  },
+  "pooled_bc_distribution_pct": {
+    "15": 0.26,
+    "18": 6.6,
+    "19": 0.53,
+    "21": 0.26,
+    "22": 53.83,
+    "23": 15.83,
+    "24": 0.26,
+    "25": 5.28,
+    "26": 17.15
+  },
+  "rare_bc_threshold": 0.03,
+  "rare_bcs": [
+    15,
+    19,
+    21,
+    24
+  ],
+  "per_host": {
+    "tinba_vm": {
+      "truth": "malware (DGA)",
+      "n_raw_rows": 10813,
+      "n_windows": 6,
+      "dominant_bc": 18,
+      "dominant_bc_frac": 0.6667,
+      "frac_in_rare_bc": 0.3333,
+      "n_distinct_bc": 2,
+      "bc_distribution": {
+        "18": 4,
+        "19": 2
+      },
+      "fail_ratio_median": null,
+      "fail_ratio_n": 0
+    },
+    "dridex_vm": {
+      "truth": "malware (C2)",
+      "n_raw_rows": 9384,
+      "n_windows": 70,
+      "dominant_bc": 23,
+      "dominant_bc_frac": 0.6571,
+      "frac_in_rare_bc": 0.0,
+      "n_distinct_bc": 3,
+      "bc_distribution": {
+        "22": 2,
+        "23": 46,
+        "26": 22
+      },
+      "fail_ratio_median": 0.8421052631578947,
+      "fail_ratio_n": 70
+    },
+    "zeus_vm_250": {
+      "truth": "malware (RAT)",
+      "n_raw_rows": 10919,
+      "n_windows": 109,
+      "dominant_bc": 22,
+      "dominant_bc_frac": 0.6972,
+      "frac_in_rare_bc": 0.0,
+      "n_distinct_bc": 3,
+      "bc_distribution": {
+        "22": 76,
+        "25": 5,
+        "26": 28
+      },
+      "fail_ratio_median": 1.0,
+      "fail_ratio_n": 109
+    },
+    "zeus_vm_251": {
+      "truth": "malware (RAT)",
+      "n_raw_rows": 10972,
+      "n_windows": 108,
+      "dominant_bc": 22,
+      "dominant_bc_frac": 0.7222,
+      "frac_in_rare_bc": 0.0,
+      "n_distinct_bc": 4,
+      "bc_distribution": {
+        "22": 78,
+        "23": 1,
+        "25": 15,
+        "26": 14
+      },
+      "fail_ratio_median": 0.9574468085106383,
+      "fail_ratio_n": 108
+    },
+    "ctu_normal32": {
+      "truth": "benign",
+      "n_raw_rows": 72316,
+      "n_windows": 48,
+      "dominant_bc": 22,
+      "dominant_bc_frac": 1.0,
+      "frac_in_rare_bc": 0.0,
+      "n_distinct_bc": 1,
+      "bc_distribution": {
+        "22": 48
+      },
+      "fail_ratio_median": 0.0,
+      "fail_ratio_n": 48
+    },
+    "ctu_normal33": {
+      "truth": "benign",
+      "n_raw_rows": 4568,
+      "n_windows": 14,
+      "dominant_bc": 23,
+      "dominant_bc_frac": 0.9286,
+      "frac_in_rare_bc": 0.0,
+      "n_distinct_bc": 2,
+      "bc_distribution": {
+        "23": 13,
+        "26": 1
+      },
+      "fail_ratio_median": 0.0,
+      "fail_ratio_n": 14
+    },
+    "uwf_143.88.5.12": {
+      "truth": "attacker (DNS enumeration, Reconnaissance)",
+      "n_raw_rows": 502528,
+      "n_windows": 21,
+      "dominant_bc": 18,
+      "dominant_bc_frac": 0.9524,
+      "frac_in_rare_bc": 0.0476,
+      "n_distinct_bc": 2,
+      "bc_distribution": {
+        "18": 20,
+        "21": 1
+      },
+      "fail_ratio_median": null,
+      "fail_ratio_n": 0
+    },
+    "uwf_143.88.7.10": {
+      "truth": "attacker (2 episodes: Reconnaissance + Discovery)",
+      "n_raw_rows": 4133,
+      "n_windows": 3,
+      "dominant_bc": 24,
+      "dominant_bc_frac": 0.3333,
+      "frac_in_rare_bc": 0.6667,
+      "n_distinct_bc": 3,
+      "bc_distribution": {
+        "15": 1,
+        "18": 1,
+        "24": 1
+      },
+      "fail_ratio_median": 1.0,
+      "fail_ratio_n": 3
+    }
+  }
+}

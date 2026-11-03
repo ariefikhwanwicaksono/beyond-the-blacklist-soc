@@ -1,0 +1,11 @@
+# Snapshot of trails.csv frozen as a determinism reference
+frozen_at_utc: 2026-08-26T00:37:22Z
+source: ~/.maltrail/trails.csv
+source_mtime_utc: 2026-08-24T14:43:14Z
+source_size_bytes: 92096534
+sha256:
+ef48417e353718e648a78cd8e9c9e1b6e866eda5925787f08f70ebe183366fc0  /sessions/rcw-01vzcftyg94zv86b7gbzo1uo/mnt/.maltrail/trails.csv
+
+Note: this file did NOT change since 24 August 2026 14:43 UTC (confirmed on 26 August 2026).
+All test runs of 25 August (both the 16-18-alert runs and those that collapsed to 0) used this SAME snapshot.
+The hypothesis 'trails.csv changed between sessions' is therefore REFUTED -- kept here as evidence and as a determinism baseline.

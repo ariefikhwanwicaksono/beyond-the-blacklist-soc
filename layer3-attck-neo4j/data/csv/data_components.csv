@@ -1,0 +1,107 @@
+data_component_id,name
+x-mitre-data-component--02d090b6-8157-48da-98a2-517f7edd49fc,Active Directory Credential Request
+x-mitre-data-component--05645013-2fed-4066-8bdc-626b2e201dd4,WMI Creation
+x-mitre-data-component--05d5b5b4-ef93-4807-b05f-33d8c5a35bc5,Group Modification
+x-mitre-data-component--071a09b1-8945-46fd-8bb7-6bcc89400963,Image Modification
+x-mitre-data-component--07688e40-a7fa-4436-937f-1216674341a0,Pod Enumeration
+x-mitre-data-component--0dcbbf4f-929c-489a-b66b-9b820d3f7f0e,Response Content
+x-mitre-data-component--0f72bf50-35b3-419d-ab95-70f9b6a818dd,Volume Metadata
+x-mitre-data-component--1067aa74-5796-4d9b-b4f1-a4c9eb6fd9da,Response Metadata
+x-mitre-data-component--1177a4c5-31c8-400c-8544-9071166afa0e,Windows Registry Key Deletion
+x-mitre-data-component--1361e324-b594-4c0e-a517-20cee32b8d7f,Instance Stop
+x-mitre-data-component--167b48f7-76e9-4fcb-9e8d-7121f7bf56c3,Malware Content
+x-mitre-data-component--16e07530-764b-4d83-bae0-cdbfc31bf21d,Snapshot Deletion
+x-mitre-data-component--181a9f8c-c780-4f1f-91a8-edb770e904ba,Network Connection Creation
+x-mitre-data-component--1887a270-576a-4049-84de-ef746b2572d6,Process Access
+x-mitre-data-component--18b236d8-7224-488f-9d2f-50076a0f653a,Active Directory Object Creation
+x-mitre-data-component--1dad5aa4-4bb5-45e4-9e42-55d40003cfa6,Certificate Registration
+x-mitre-data-component--235b7491-2d2b-4617-9a52-3c0783680f71,File Access
+x-mitre-data-component--23e4ee78-26f3-4fcf-ba43-ab953962f96c,Kernel Module Load
+x-mitre-data-component--2a80d95f-08c4-48e3-833e-151ef19d90f5,Instance Enumeration
+x-mitre-data-component--2b3bfe19-d59a-460d-93bb-2f546adc2d2c,File Creation
+x-mitre-data-component--2e521444-7295-4dec-96c1-7595b2df7811,Active DNS
+x-mitre-data-component--3551476e-14f5-4e48-a518-e82135329e03,Driver Load
+x-mitre-data-component--3772e279-27d6-477a-9fe3-c6beb363594c,Network Traffic Content
+x-mitre-data-component--39b9db72-8b48-4595-a18d-db5bbba3091b,Logon Session Metadata
+x-mitre-data-component--3acecdde-c327-4498-9bb8-33a2e63c6c57,Volume Deletion
+x-mitre-data-component--3d20385b-24ef-40e1-9f56-f39750379077,Process Creation
+x-mitre-data-component--3d6e6b3b-4aa8-40e1-8c47-91db0f313d9f,Drive Creation
+x-mitre-data-component--3da222e6-53f3-451c-a239-0b405c009432,Snapshot Creation
+x-mitre-data-component--45977f14-1bcc-4ec4-ac14-a30fd3a11f44,Cloud Storage Modification
+x-mitre-data-component--45d0ff14-b9c4-41f5-8603-156657c20b75,Instance Modification
+x-mitre-data-component--45fd904d-6eb0-4b50-8478-a961f09f898b,Instance Metadata
+x-mitre-data-component--4c41e296-b8d2-4a37-b789-eb565c87c00c,Cloud Storage Deletion
+x-mitre-data-component--4dcd8ba3-2075-4f8b-941e-39884ffaac08,Drive Modification
+x-mitre-data-component--5263cb33-08cc-4a68-820f-004e1e400d76,Pod Creation
+x-mitre-data-component--5297a638-1382-4f0c-8472-0d21830bf705,Service Creation
+x-mitre-data-component--58ef998c-f3bf-4985-b487-b1005f5c05d1,Cloud Storage Access
+x-mitre-data-component--59ec10d9-546b-4b8e-bccb-fa85f71e5055,Cloud Storage Creation
+x-mitre-data-component--5b8b466b-2c81-4fe7-946f-d677a74ae3db,Active Directory Object Modification
+x-mitre-data-component--5c6de881-bc70-4070-855a-7a9631a407f7,Active Directory Object Access
+x-mitre-data-component--5f7c9def-0ddf-423b-b1f8-fb2ddeed0ce3,Web Credential Creation
+x-mitre-data-component--5fe82895-28e5-4aac-845e-dc886b63be2e,Container Start
+x-mitre-data-component--61f1d40e-f3d0-4cc6-aa2d-937b6204194f,Process Termination
+x-mitre-data-component--639e87f3-acb6-448a-9645-258f20da4bc5,File Metadata
+x-mitre-data-component--66531bc6-a509-4868-8314-4d599e91d222,Service Modification
+x-mitre-data-component--672b2ebd-4310-4efe-bf03-7ab005298a74,Pod Modification
+x-mitre-data-component--685f917a-e95e-4ba0-ade1-c7d354dae6e0,Command Execution
+x-mitre-data-component--73ff2dcc-24b1-4368-b9dc-706dd9e68354,Drive Access
+x-mitre-data-component--746f095a-f84c-4ccc-90a5-c7caa5c100a2,Firewall Metadata
+x-mitre-data-component--74fa567d-bc90-425c-8a41-3c703abb221c,Service Metadata
+x-mitre-data-component--7561ed50-16cb-4826-82c7-c1ddca61785e,Instance Deletion
+x-mitre-data-component--7b375092-3a61-448d-900a-77c9a4bde4dc,Scheduled Job Metadata
+x-mitre-data-component--7f70fae7-a68d-4730-a83a-f260b9606129,Windows Registry Key Creation
+x-mitre-data-component--84572de3-9583-4c73-aabd-06ea88123dd8,File Modification
+x-mitre-data-component--85a533a4-5fa4-4dba-b45d-f0717bedd6e6,Host Status
+x-mitre-data-component--8b4ca854-ac08-47da-b24f-601b28a39aff,Image Deletion
+x-mitre-data-component--8bc66f94-54a9-4be4-bdd1-fe90df643774,Snapshot Metadata
+x-mitre-data-component--8c826308-2760-492f-9e36-4f0f7e23bcac,Cloud Service Enumeration
+x-mitre-data-component--8d8c7cac-94cf-4726-8989-cab33851168c,Group Metadata
+x-mitre-data-component--8e44412e-3238-4d64-8878-4f11e27784fe,Group Enumeration
+x-mitre-data-component--8fb2f315-1aca-4cef-ae0d-8105e1f95985,Social Media
+x-mitre-data-component--9085a576-636a-455b-91d2-c2921bbe6d1d,Active Directory Object Deletion
+x-mitre-data-component--91b3ed33-d1b5-4c4b-a896-76c55eb3cfd8,Container Enumeration
+x-mitre-data-component--93a6e38c-02a5-44d8-9035-b2e08459f31f,Malware Metadata
+x-mitre-data-component--9bde2f9d-a695-4344-bfac-f2dce13d121e,OS API Execution
+x-mitre-data-component--9c2fa0ae-7abc-485a-97f6-699e3b6cf9fa,Application Log Content
+x-mitre-data-component--9ce98c86-8d30-4043-ba54-0784d478d0b5,Logon Session Creation
+x-mitre-data-component--9f387817-df83-432a-b56b-a8fb7f71eedd,Script Execution
+x-mitre-data-component--a5ae90ca-0c4b-481c-959f-0eb18a7ff953,Container Creation
+x-mitre-data-component--a7f22107-02e5-4982-9067-6625d4a1765a,Network Traffic Flow
+x-mitre-data-component--a953ca55-921a-44f7-9b8d-3d40141aa17e,User Account Authentication
+x-mitre-data-component--b008766d-f34f-4ded-b712-659f59aaed6e,Image Creation
+x-mitre-data-component--b33d36e3-d7ea-4895-8eed-19a08a8f7c4f,Cloud Service Metadata
+x-mitre-data-component--b597a220-6510-4397-b0d8-342cd2c58827,Image Metadata
+x-mitre-data-component--b5b0e8ae-7436-4951-950a-7b83c4dd3f2c,Instance Creation
+x-mitre-data-component--b5d0492b-cda4-421c-8e51-ed2b8d85c5d0,User Account Metadata
+x-mitre-data-component--b9a1578e-8653-4103-be23-cb52e0b1816e,Named Pipe Metadata
+x-mitre-data-component--b9d031bb-d150-4fc6-8025-688201bf3ffd,Firmware Modification
+x-mitre-data-component--bf91faa8-0049-4870-810a-4df55e0b77ee,Firewall Enumeration
+x-mitre-data-component--c0a4a086-cc20-4e1e-b7cb-29d99dfa3fb1,Module Load
+x-mitre-data-component--c97d0171-f6e0-4415-85ff-4082fdb8c72a,Firewall Disable
+x-mitre-data-component--cc150ad8-ecfa-4340-9aaa-d21165873bd4,Passive DNS
+x-mitre-data-component--d27b0089-2c39-4b6c-84ff-303e48657e77,User Account Modification
+x-mitre-data-component--d2ff4b56-8351-4ed8-b0fb-d8605366005f,Firewall Rule Modification
+x-mitre-data-component--d46272ce-a0fe-4256-855e-738de7bb63ee,Volume Modification
+x-mitre-data-component--d5fca4e4-e47a-487b-873f-3d22f8865e96,Process Modification
+x-mitre-data-component--d6257b8e-869c-41c0-8731-fdca40858a91,User Account Deletion
+x-mitre-data-component--da85d358-741a-410d-9433-20d6269a6170,Windows Registry Key Modification
+x-mitre-data-component--dad75cc7-5bae-4175-adb4-ca1962d8650e,Volume Creation
+x-mitre-data-component--deb22295-7e37-4a3b-ac6f-c86666fbe63d,User Account Creation
+x-mitre-data-component--e214eb6d-de8f-4154-9015-6d47915fbed1,Cloud Storage Metadata
+x-mitre-data-component--e52d89f9-1710-4708-88a5-cbef77c4cd5e,Cloud Service Modification
+x-mitre-data-component--e905dad2-00d6-477c-97e8-800427abd0e8,File Deletion
+x-mitre-data-component--ec0612c5-2644-4c50-bcac-82586974fedd,Cloud Service Disable
+x-mitre-data-component--ec225357-8197-47a4-a9cd-57741d592877,Volume Enumeration
+x-mitre-data-component--ed0dd8aa-1677-4551-bb7d-8da767617e1b,Windows Registry Key Access
+x-mitre-data-component--ee575f4a-2d4f-48f6-b18b-89067760adc1,Process Metadata
+x-mitre-data-component--f1eb6ea9-f3ab-414f-af35-2d5427199984,Snapshot Modification
+x-mitre-data-component--f42df6f0-6395-4f0c-9376-525a031f00c3,Scheduled Job Creation
+x-mitre-data-component--f5468e67-51c7-4756-9b4f-65707708e7fa,Network Share Access
+x-mitre-data-component--f5a9a1dd-82f9-41a3-85b8-13e5b9cd6c79,Driver Metadata
+x-mitre-data-component--f8213cde-6b3a-420d-9ab7-41c9af1a919f,Instance Start
+x-mitre-data-component--faa34cf6-cf32-4dc9-bd6a-8f7a606ff65b,Scheduled Job Modification
+x-mitre-data-component--fcc4811f-9cc8-4db5-8097-4d8242a380de,Cloud Storage Enumeration
+x-mitre-data-component--ff93f688-d7a4-49cf-9c79-a14454da8428,Web Credential Usage
+x-mitre-data-component--ff9b665a-598b-4bcb-8b2a-a87566aa1256,Domain Registration
+x-mitre-data-component--ffd73905-2e51-4f2d-8549-e72fb0eb6c38,Snapshot Enumeration

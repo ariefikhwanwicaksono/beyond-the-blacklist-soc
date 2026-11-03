@@ -1,0 +1,30 @@
+digraph experiment3_match {
+  rankdir=LR;
+  bgcolor="white";
+  fontname="Helvetica";
+  graph [fontsize=11, nodesep=0.55, ranksep=0.9, splines=true];
+  node [fontname="Helvetica", fontsize=11, shape=circle, style=filled, fontcolor=white, fixedsize=false];
+  edge [fontname="Helvetica", fontsize=9, color="#888888", fontcolor="#444444", arrowsize=0.8, penwidth=1.4];
+
+  technique [label="T1046", fillcolor="#2a78d6", color="#13467f", penwidth=2.5, width=0.95];
+  ds [label="DET0376", fillcolor="#1baf7a", color="#0d6b48", penwidth=2.5, width=1.0];
+  an1057 [label="AN1057", fillcolor="#1baf7a", color="#0d6b48", penwidth=2.5, width=0.95];
+  an1058 [label="AN1058", fillcolor="#1baf7a", color="#0d6b48", penwidth=2.5, width=0.95];
+  dc_net [label="Network\nConnection\nCreation", fillcolor="#eda100", color="#8a6300", penwidth=2.5, width=1.3];
+  dc_proc [label="Process\nCreation", fillcolor="#eda100", color="#8a6300", penwidth=2.5, width=1.1];
+
+  an_other1 [label="Analytic\n(other)", fillcolor="#EDEDED", color="#BEBEBE", fontcolor="#9A9A9A", style="filled,dashed", penwidth=1.3, width=0.9];
+  an_other2 [label="Analytic\n(other)", fillcolor="#EDEDED", color="#BEBEBE", fontcolor="#9A9A9A", style="filled,dashed", penwidth=1.3, width=0.9];
+  dc_other [label="2 more\nData\nComponents", fillcolor="#EDEDED", color="#BEBEBE", fontcolor="#9A9A9A", style="filled,dashed", penwidth=1.3, width=1.05];
+
+  technique -> ds [dir=back, label="DETECTS", color="#13467f", fontcolor="#13467f", penwidth=2.2];
+  ds -> an1057 [label="HAS_ANALYTIC", color="#0d6b48", fontcolor="#0d6b48", penwidth=2.2];
+  ds -> an1058 [label="HAS_ANALYTIC", color="#0d6b48", fontcolor="#0d6b48", penwidth=2.2];
+  ds -> an_other1 [style=dashed, color="#CCCCCC", arrowsize=0.6];
+  ds -> an_other2 [style=dashed, color="#CCCCCC", arrowsize=0.6];
+  an1057 -> dc_net [label="USES_LOG_SOURCE", color="#8a6300", fontcolor="#8a6300", penwidth=2.2];
+  an1057 -> dc_proc [label="USES_LOG_SOURCE", color="#8a6300", fontcolor="#8a6300", penwidth=2.2];
+  an1058 -> dc_proc [label="USES_LOG_SOURCE", color="#8a6300", fontcolor="#8a6300", penwidth=2.2];
+  an_other1 -> dc_other [style=dashed, color="#CCCCCC", arrowsize=0.6];
+  an_other2 -> dc_other [style=dashed, color="#CCCCCC", arrowsize=0.6];
+}

@@ -1,0 +1,7 @@
+pcap,source_dataset,family,ground_truth,n_zeek_flows,n_maltrail_alert_lines,n_maltrail_unique_observables,maltrail_hit
+zeus,USTC-TFC2016/Stratosphere,Zeus (banking trojan),malware,22053,5697,11,True
+tinba,USTC-TFC2016/Stratosphere,Tinba (banking trojan),malware,10813,10902,1001,True
+dridex,USTC-TFC2016/Stratosphere,Dridex (banking trojan / credential theft),malware,9384,0,0,False
+bittorrent,USTC-TFC2016/Stratosphere,BitTorrent (benign),benign,7517,0,0,False
+skype,USTC-TFC2016/Stratosphere,Skype (benign),benign,6321,0,0,False
+iot23_capture1,IoT-23 (Stratosphere/Aposemat),IoT-23 scenario 1 (malware family not yet read from the scenario README.md),malware,1008748,5,5,True

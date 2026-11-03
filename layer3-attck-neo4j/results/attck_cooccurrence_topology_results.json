@@ -1,0 +1,617 @@
+{
+  "method": "Two Techniques are connected if their DetectionStrategy's Analytics jointly rely on >=1 shared DataComponent used by <= CAP Techniques project-wide (rare/specific telemetry only -- generic DataComponents like Process Creation, used by 455/697 = 65.3% of Techniques, are excluded by design).",
+  "data_source": "layer3-attck-neo4j/data/csv/*.csv (same CSVs that feed the live Neo4j instance; counts cross-checked against Table 7 / kg_schema.dot before use).",
+  "top_5_most_common_data_components": [
+    {
+      "name": "Process Creation",
+      "n_techniques": 455,
+      "pct_of_697": 65.3
+    },
+    {
+      "name": "Command Execution",
+      "n_techniques": 211,
+      "pct_of_697": 30.3
+    },
+    {
+      "name": "File Creation",
+      "n_techniques": 176,
+      "pct_of_697": 25.3
+    },
+    {
+      "name": "Network Connection Creation",
+      "n_techniques": 154,
+      "pct_of_697": 22.1
+    },
+    {
+      "name": "Network Traffic Content",
+      "n_techniques": 140,
+      "pct_of_697": 20.1
+    }
+  ],
+  "unfiltered_pair_count_if_no_cap": {
+    "n_pairs": 130362,
+    "pct_of_all_pairs": 53.7,
+    "note": "This is why a cap is necessary -- an unfiltered co-occurrence graph connects the majority of all possible Technique pairs and is unreadable."
+  },
+  "threshold_sensitivity_sweep": [
+    {
+      "cap": 20,
+      "n_pairs": 1751,
+      "pct_of_all_pairs": 0.722,
+      "n_techniques_connected": 259
+    },
+    {
+      "cap": 15,
+      "n_pairs": 1123,
+      "pct_of_all_pairs": 0.463,
+      "n_techniques_connected": 225
+    },
+    {
+      "cap": 10,
+      "n_pairs": 476,
+      "pct_of_all_pairs": 0.196,
+      "n_techniques_connected": 164
+    },
+    {
+      "cap": 8,
+      "n_pairs": 324,
+      "pct_of_all_pairs": 0.134,
+      "n_techniques_connected": 133
+    },
+    {
+      "cap": 6,
+      "n_pairs": 184,
+      "pct_of_all_pairs": 0.076,
+      "n_techniques_connected": 102
+    },
+    {
+      "cap": 5,
+      "n_pairs": 95,
+      "pct_of_all_pairs": 0.039,
+      "n_techniques_connected": 70
+    },
+    {
+      "cap": 4,
+      "n_pairs": 81,
+      "pct_of_all_pairs": 0.033,
+      "n_techniques_connected": 64
+    },
+    {
+      "cap": 3,
+      "n_pairs": 48,
+      "pct_of_all_pairs": 0.02,
+      "n_techniques_connected": 50
+    }
+  ],
+  "chosen_cap": 10,
+  "chosen_cap_is_a_design_choice_not_a_statistical_threshold": true,
+  "n_components_at_chosen_cap": 16,
+  "components_at_chosen_cap": [
+    {
+      "size": 47,
+      "driving_data_components": [
+        "Cloud Service Disable",
+        "Cloud Service Metadata",
+        "Cloud Storage Deletion",
+        "Cloud Storage Enumeration",
+        "Cloud Storage Metadata",
+        "Cloud Storage Modification",
+        "Container Creation",
+        "Container Start",
+        "Image Creation",
+        "Instance Creation",
+        "Instance Enumeration",
+        "Instance Metadata",
+        "Instance Modification",
+        "Instance Stop",
+        "Kernel Module Load",
+        "Pod Creation",
+        "Process Termination",
+        "Service Modification",
+        "Snapshot Creation",
+        "Snapshot Deletion",
+        "Snapshot Metadata",
+        "Snapshot Modification",
+        "Volume Creation",
+        "Volume Deletion",
+        "Volume Modification"
+      ],
+      "technique_ids": [
+        "T1003.003",
+        "T1053.007",
+        "T1059.013",
+        "T1074.001",
+        "T1082",
+        "T1114.003",
+        "T1204",
+        "T1204.003",
+        "T1213.002",
+        "T1213.003",
+        "T1213.006",
+        "T1480.002",
+        "T1485",
+        "T1485.001",
+        "T1486",
+        "T1489",
+        "T1490",
+        "T1491.002",
+        "T1496.001",
+        "T1499.003",
+        "T1499.004",
+        "T1505.004",
+        "T1525",
+        "T1537",
+        "T1538",
+        "T1543",
+        "T1543.005",
+        "T1547.006",
+        "T1548.003",
+        "T1552",
+        "T1552.005",
+        "T1574.011",
+        "T1578",
+        "T1578.001",
+        "T1578.002",
+        "T1578.003",
+        "T1578.004",
+        "T1580",
+        "T1610",
+        "T1611",
+        "T1612",
+        "T1619",
+        "T1668",
+        "T1677",
+        "T1685",
+        "T1685.002",
+        "T1687"
+      ],
+      "technique_names": {
+        "T1003.003": "NTDS",
+        "T1053.007": "Container Orchestration Job",
+        "T1059.013": "Container CLI/API",
+        "T1074.001": "Local Data Staging",
+        "T1082": "System Information Discovery",
+        "T1114.003": "Email Forwarding Rule",
+        "T1204": "User Execution",
+        "T1204.003": "Malicious Image",
+        "T1213.002": "Sharepoint",
+        "T1213.003": "Code Repositories",
+        "T1213.006": "Databases",
+        "T1480.002": "Mutual Exclusion",
+        "T1485": "Data Destruction",
+        "T1485.001": "Lifecycle-Triggered Deletion",
+        "T1486": "Data Encrypted for Impact",
+        "T1489": "Service Stop",
+        "T1490": "Inhibit System Recovery",
+        "T1491.002": "External Defacement",
+        "T1496.001": "Compute Hijacking",
+        "T1499.003": "Application Exhaustion Flood",
+        "T1499.004": "Application or System Exploitation",
+        "T1505.004": "IIS Components",
+        "T1525": "Implant Internal Image",
+        "T1537": "Transfer Data to Cloud Account",
+        "T1538": "Cloud Service Dashboard",
+        "T1543": "Create or Modify System Process",
+        "T1543.005": "Container Service",
+        "T1547.006": "Kernel Modules and Extensions",
+        "T1548.003": "Sudo and Sudo Caching",
+        "T1552": "Unsecured Credentials",
+        "T1552.005": "Cloud Instance Metadata API",
+        "T1574.011": "Services Registry Permissions Weakness",
+        "T1578": "Modify Cloud Compute Infrastructure",
+        "T1578.001": "Create Snapshot",
+        "T1578.002": "Create Cloud Instance",
+        "T1578.003": "Delete Cloud Instance",
+        "T1578.004": "Revert Cloud Instance",
+        "T1580": "Cloud Infrastructure Discovery",
+        "T1610": "Deploy Container",
+        "T1611": "Escape to Host",
+        "T1612": "Build Image on Host",
+        "T1619": "Cloud Storage Object Discovery",
+        "T1668": "Exclusive Control",
+        "T1677": "Poisoned Pipeline Execution",
+        "T1685": "Disable or Modify Tools",
+        "T1685.002": "Disable or Modify Cloud Log",
+        "T1687": "Exploitation for Defense Impairment"
+      }
+    },
+    {
+      "size": 24,
+      "driving_data_components": [
+        "Drive Access",
+        "Drive Modification",
+        "Firmware Modification",
+        "Network Share Access"
+      ],
+      "technique_ids": [
+        "T1037.003",
+        "T1039",
+        "T1056.001",
+        "T1074.002",
+        "T1080",
+        "T1090.003",
+        "T1114",
+        "T1120",
+        "T1213",
+        "T1495",
+        "T1542",
+        "T1542.001",
+        "T1542.002",
+        "T1542.003",
+        "T1542.004",
+        "T1542.005",
+        "T1552.004",
+        "T1552.006",
+        "T1561",
+        "T1561.001",
+        "T1561.002",
+        "T1564.005",
+        "T1570",
+        "T1601.001"
+      ],
+      "technique_names": {
+        "T1037.003": "Network Logon Script",
+        "T1039": "Data from Network Shared Drive",
+        "T1056.001": "Keylogging",
+        "T1074.002": "Remote Data Staging",
+        "T1080": "Taint Shared Content",
+        "T1090.003": "Multi-hop Proxy",
+        "T1114": "Email Collection",
+        "T1120": "Peripheral Device Discovery",
+        "T1213": "Data from Information Repositories",
+        "T1495": "Firmware Corruption",
+        "T1542": "Pre-OS Boot",
+        "T1542.001": "System Firmware",
+        "T1542.002": "Component Firmware",
+        "T1542.003": "Bootkit",
+        "T1542.004": "ROMMONkit",
+        "T1542.005": "TFTP Boot",
+        "T1552.004": "Private Keys",
+        "T1552.006": "Group Policy Preferences",
+        "T1561": "Disk Wipe",
+        "T1561.001": "Disk Content Wipe",
+        "T1561.002": "Disk Structure Wipe",
+        "T1564.005": "Hidden File System",
+        "T1570": "Lateral Tool Transfer",
+        "T1601.001": "Patch System Image"
+      }
+    },
+    {
+      "size": 21,
+      "driving_data_components": [
+        "Active Directory Credential Request",
+        "Active Directory Object Access",
+        "Active Directory Object Creation",
+        "Windows Registry Key Access"
+      ],
+      "technique_ids": [
+        "T1003",
+        "T1003.006",
+        "T1098.001",
+        "T1098.005",
+        "T1201",
+        "T1207",
+        "T1482",
+        "T1547.004",
+        "T1550.002",
+        "T1550.003",
+        "T1552.002",
+        "T1558",
+        "T1558.001",
+        "T1558.002",
+        "T1558.003",
+        "T1558.004",
+        "T1559.001",
+        "T1559.002",
+        "T1614.001",
+        "T1615",
+        "T1649"
+      ],
+      "technique_names": {
+        "T1003": "OS Credential Dumping",
+        "T1003.006": "DCSync",
+        "T1098.001": "Additional Cloud Credentials",
+        "T1098.005": "Device Registration",
+        "T1201": "Password Policy Discovery",
+        "T1207": "Rogue Domain Controller",
+        "T1482": "Domain Trust Discovery",
+        "T1547.004": "Winlogon Helper DLL",
+        "T1550.002": "Pass the Hash",
+        "T1550.003": "Pass the Ticket",
+        "T1552.002": "Credentials in Registry",
+        "T1558": "Steal or Forge Kerberos Tickets",
+        "T1558.001": "Golden Ticket",
+        "T1558.002": "Silver Ticket",
+        "T1558.003": "Kerberoasting",
+        "T1558.004": "AS-REP Roasting",
+        "T1559.001": "Component Object Model",
+        "T1559.002": "Dynamic Data Exchange",
+        "T1614.001": "System Language Discovery",
+        "T1615": "Group Policy Discovery",
+        "T1649": "Steal or Forge Authentication Certificates"
+      }
+    },
+    {
+      "size": 10,
+      "driving_data_components": [
+        "Active DNS",
+        "Domain Registration",
+        "Passive DNS",
+        "Response Metadata"
+      ],
+      "technique_ids": [
+        "T1583",
+        "T1583.001",
+        "T1583.003",
+        "T1583.004",
+        "T1584",
+        "T1584.001",
+        "T1584.002",
+        "T1584.003",
+        "T1584.004",
+        "T1665"
+      ],
+      "technique_names": {
+        "T1583": "Acquire Infrastructure",
+        "T1583.001": "Domains",
+        "T1583.003": "Virtual Private Server",
+        "T1583.004": "Server",
+        "T1584": "Compromise Infrastructure",
+        "T1584.001": "Domains",
+        "T1584.002": "DNS Server",
+        "T1584.003": "Virtual Private Server",
+        "T1584.004": "Server",
+        "T1665": "Hide Infrastructure"
+      }
+    },
+    {
+      "size": 8,
+      "driving_data_components": [
+        "Certificate Registration",
+        "Malware Content",
+        "Malware Metadata"
+      ],
+      "technique_ids": [
+        "T1587",
+        "T1587.001",
+        "T1587.002",
+        "T1588",
+        "T1588.001",
+        "T1588.002",
+        "T1588.003",
+        "T1588.004"
+      ],
+      "technique_names": {
+        "T1587": "Develop Capabilities",
+        "T1587.001": "Malware",
+        "T1587.002": "Code Signing Certificates",
+        "T1588": "Obtain Capabilities",
+        "T1588.001": "Malware",
+        "T1588.002": "Tool",
+        "T1588.003": "Code Signing Certificates",
+        "T1588.004": "Digital Certificates"
+      }
+    },
+    {
+      "size": 8,
+      "driving_data_components": [
+        "Drive Creation"
+      ],
+      "technique_ids": [
+        "T1025",
+        "T1052",
+        "T1052.001",
+        "T1091",
+        "T1092",
+        "T1200",
+        "T1219.003",
+        "T1674"
+      ],
+      "technique_names": {
+        "T1025": "Data from Removable Media",
+        "T1052": "Exfiltration Over Physical Medium",
+        "T1052.001": "Exfiltration over USB",
+        "T1091": "Replication Through Removable Media",
+        "T1092": "Communication Through Removable Media",
+        "T1200": "Hardware Additions",
+        "T1219.003": "Remote Access Hardware",
+        "T1674": "Input Injection"
+      }
+    },
+    {
+      "size": 7,
+      "driving_data_components": [
+        "WMI Creation"
+      ],
+      "technique_ids": [
+        "T1027.011",
+        "T1047",
+        "T1222.001",
+        "T1480",
+        "T1480.001",
+        "T1546",
+        "T1546.003"
+      ],
+      "technique_names": {
+        "T1027.011": "Fileless Storage",
+        "T1047": "Windows Management Instrumentation",
+        "T1222.001": "Windows Permissions",
+        "T1480": "Execution Guardrails",
+        "T1480.001": "Environmental Keying",
+        "T1546": "Event Triggered Execution",
+        "T1546.003": "Windows Management Instrumentation Event Subscription"
+      }
+    },
+    {
+      "size": 7,
+      "driving_data_components": [
+        "Cloud Service Enumeration",
+        "Group Enumeration"
+      ],
+      "technique_ids": [
+        "T1069.003",
+        "T1087",
+        "T1518",
+        "T1526",
+        "T1528",
+        "T1555",
+        "T1555.006"
+      ],
+      "technique_names": {
+        "T1069.003": "Cloud Groups",
+        "T1087": "Account Discovery",
+        "T1518": "Software Discovery",
+        "T1526": "Cloud Service Discovery",
+        "T1528": "Steal Application Access Token",
+        "T1555": "Credentials from Password Stores",
+        "T1555.006": "Cloud Secrets Management Stores"
+      }
+    },
+    {
+      "size": 6,
+      "driving_data_components": [
+        "User Account Creation"
+      ],
+      "technique_ids": [
+        "T1036.010",
+        "T1136",
+        "T1136.001",
+        "T1136.002",
+        "T1136.003",
+        "T1564.002"
+      ],
+      "technique_names": {
+        "T1036.010": "Masquerade Account Name",
+        "T1136": "Create Account",
+        "T1136.001": "Local Account",
+        "T1136.002": "Domain Account",
+        "T1136.003": "Cloud Account",
+        "T1564.002": "Hidden Users"
+      }
+    },
+    {
+      "size": 6,
+      "driving_data_components": [
+        "Web Credential Creation",
+        "Web Credential Usage"
+      ],
+      "technique_ids": [
+        "T1550",
+        "T1550.001",
+        "T1550.004",
+        "T1606",
+        "T1606.001",
+        "T1606.002"
+      ],
+      "technique_names": {
+        "T1550": "Use Alternate Authentication Material",
+        "T1550.001": "Application Access Token",
+        "T1550.004": "Web Session Cookie",
+        "T1606": "Forge Web Credentials",
+        "T1606.001": "Web Cookies",
+        "T1606.002": "SAML Tokens"
+      }
+    },
+    {
+      "size": 5,
+      "driving_data_components": [
+        "Scheduled Job Metadata",
+        "Scheduled Job Modification"
+      ],
+      "technique_ids": [
+        "T1029",
+        "T1036.004",
+        "T1053.005",
+        "T1070",
+        "T1124"
+      ],
+      "technique_names": {
+        "T1029": "Scheduled Transfer",
+        "T1036.004": "Masquerade Task or Service",
+        "T1053.005": "Scheduled Task",
+        "T1070": "Indicator Removal",
+        "T1124": "System Time Discovery"
+      }
+    },
+    {
+      "size": 4,
+      "driving_data_components": [
+        "Named Pipe Metadata"
+      ],
+      "technique_ids": [
+        "T1055.001",
+        "T1135",
+        "T1559",
+        "T1559.003"
+      ],
+      "technique_names": {
+        "T1055.001": "Dynamic-link Library Injection",
+        "T1135": "Network Share Discovery",
+        "T1559": "Inter-Process Communication",
+        "T1559.003": "XPC Services"
+      }
+    },
+    {
+      "size": 4,
+      "driving_data_components": [
+        "Social Media"
+      ],
+      "technique_ids": [
+        "T1585",
+        "T1585.001",
+        "T1586",
+        "T1586.001"
+      ],
+      "technique_names": {
+        "T1585": "Establish Accounts",
+        "T1585.001": "Social Media Accounts",
+        "T1586": "Compromise Accounts",
+        "T1586.001": "Social Media Accounts"
+      }
+    },
+    {
+      "size": 3,
+      "driving_data_components": [
+        "Image Metadata"
+      ],
+      "technique_ids": [
+        "T1036",
+        "T1036.005",
+        "T1564.006"
+      ],
+      "technique_names": {
+        "T1036": "Masquerading",
+        "T1036.005": "Match Legitimate Resource Name or Location",
+        "T1564.006": "Run Virtual Instance"
+      }
+    },
+    {
+      "size": 2,
+      "driving_data_components": [
+        "Container Enumeration"
+      ],
+      "technique_ids": [
+        "T1068",
+        "T1613"
+      ],
+      "technique_names": {
+        "T1068": "Exploitation for Privilege Escalation",
+        "T1613": "Container and Resource Discovery"
+      }
+    },
+    {
+      "size": 2,
+      "driving_data_components": [
+        "User Account Deletion"
+      ],
+      "technique_ids": [
+        "T1070.009",
+        "T1531"
+      ],
+      "technique_names": {
+        "T1070.009": "Clear Persistence",
+        "T1531": "Account Access Removal"
+      }
+    }
+  ]
+}

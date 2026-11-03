@@ -1,0 +1,33 @@
+digraph kg_schema {
+  rankdir=LR;
+  bgcolor="white";
+  fontname="Times-Roman";
+  node [fontname="Times-Roman", fontsize=13, style="filled,rounded", shape=box, penwidth=1.2];
+  edge [fontname="Times-Roman", fontsize=11, color="#52514e", fontcolor="#0b0b0b"];
+
+  Tactic [label="Tactic\n(15)", fillcolor="#2a78d622", color="#2a78d6"];
+  Technique [label="Technique\n(697:\n222 top-level +\n475 sub-technique)", fillcolor="#2a78d622", color="#2a78d6"];
+  DetectionStrategy [label="DetectionStrategy\n(697)", fillcolor="#1baf7a22", color="#1baf7a"];
+  Analytic [label="Analytic\n(1,758)", fillcolor="#1baf7a22", color="#1baf7a"];
+  DataComponent [label="DataComponent\n(106)", fillcolor="#eda10022", color="#eda100"];
+
+  Technique -> Tactic [label="PART_OF\n(872)"];
+  Technique -> Technique [label="SUBTECHNIQUE_OF\n(475)", constraint=false];
+  DetectionStrategy -> Technique [label="DETECTS\n(697)"];
+  DetectionStrategy -> Analytic [label="HAS_ANALYTIC\n(1,745)"];
+  Analytic -> DataComponent [label="USES_LOG_SOURCE\n(4,182)"];
+
+  subgraph cluster_bridge {
+    label="Candidate semantic bridge: 544/1,758 Analytics (30.9%)\nreference a network-traffic Data Component";
+    fontname="Times-Italic";
+    fontsize=11;
+    fontcolor="#52514e";
+    style="dashed";
+    color="#9c3f1b";
+    DataComponent;
+  }
+
+  note [shape=plaintext, fontname="Times-Italic", fontsize=10, fontcolor="#52514e",
+        label="All five node and relationship counts verified against a live Neo4j instance (Table 7)."];
+  { rank=sink; note }
+}

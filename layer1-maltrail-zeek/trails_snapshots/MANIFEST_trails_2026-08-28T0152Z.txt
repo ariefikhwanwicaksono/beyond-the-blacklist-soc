@@ -1,0 +1,32 @@
+# Snapshot of trails.csv frozen for cross-session determinism pinning (28 August 2026)
+frozen_at_utc: 2026-08-28T04:20:54Z
+source: ~/.maltrail/trails.csv (+ trails.csv.confidence)
+source_mtime_utc: 2026-08-28T01:52:20Z
+source_size_bytes:
+  trails.csv: 93130085
+  trails.csv.confidence: 43135536
+sha256:
+  trails.csv:             6b7d9e7b96af061ea7b4ece5e4da12959934e1c1f67d96816bac5171dc598740
+  trails.csv.confidence:  5b8128e3699fb7075b229333b8e300117cc154a30c1231d3984585e84a0d903a
+
+Context: checked directly (28 August 2026) that trails.csv HAD in fact changed since the previous
+snapshot (trails_2026-08-24T1443Z_frozen.csv, 92,096,534 bytes) -- the live trails.csv mtime is now
+2026-08-28T01:52:20Z (no longer 2026-08-24T14:43:14Z) and its size grew to 93,130,085 bytes. This
+DISTINGUISHES this case from the README conclusion "the trails.csv drift hypothesis is PROVEN FALSE"
+(24-25 August) -- that conclusion only holds for the specific time window tested then (mtime was shown
+NOT to change DURING the 25 August test sessions); it is NOT a claim that trails.csv never changed at all
+in this project. This snapshot is frozen as the new PINNED baseline -- used by
+pin_trails_from_snapshot() (notebook section C.2a) before every experiment run, so that Maltrail's
+UPDATE_PERIOD (24 h) can no longer silently change the trail content between sessions.
+
+[MEDIUM-HIGH CONFIDENCE, minute-level verification not done] this snapshot is most likely the same
+trails.csv used in the 28 August 03:39 run (last upload of layer1_experiment.html, section C.5 results:
+zeus 5x5697, tinba 5x10902, both DETERMINISTIC) -- source_mtime 01:52:20 precedes that upload. It
+CANNOT be established whether the EARLIER run (28 August 01:55, before the tinba fix, total
+log_event=10827) used THIS trails.csv or the older one -- this is a likely explanation of the
+total=10827 vs total=10902 difference for tinba between those two runs, BUT it has not been verified
+precisely -- it needs verification if certainty is required.
+
+(Note added 2026-10-22: pin_trails_from_snapshot() keeps the snapshot's mtime, so from 29 August on the
+sensor rebuilt trails.csv at start-up despite the pin; use tools/pin_trails_fresh.py instead. See
+tools/maltrail-patch/README.md.)

@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-11-03T05:07:53.180723+00:00",
+  "methodology": "Maltrail threshold & window logic (PORT_SCANNING_THRESHOLD, SCAN_WINDOW) read directly from this project's core/settings.py & maltrail.conf, applied to the raw UWF-ZeekData22 data (CSV conn logs, not pcaps -- sensor.py is not run directly). See the Layer 2 framework document, Section 4.5.",
+  "blacklist_check": {
+    "143.88.5.12": false,
+    "143.88.5.1": false,
+    "143.88.7.10": false,
+    "143.88.2.10": false,
+    "143.88.2.12": false
+  },
+  "thresholds": {
+    "PORT_SCANNING_THRESHOLD": 10,
+    "INFECTION_SCANNING_THRESHOLD": 32,
+    "DNS_EXHAUSTION_THRESHOLD": 1000,
+    "SCAN_WINDOW_SEC": 30
+  },
+  "heuristic_results": {
+    "uwf_143.88.7.10_episode1_reconnaissance": {
+      "label": "143.88.7.10 Episode 1 (Reconnaissance, 10 Feb)",
+      "n_rows": 2048,
+      "n_windows": 3,
+      "max_ports_per_window": 2,
+      "distinct_dst_ip": 1,
+      "n_alerting_windows": 0,
+      "flagged": false
+    },
+    "uwf_143.88.7.10_episode2_discovery": {
+      "label": "143.88.7.10 Episode 2 (Discovery, 11 Feb)",
+      "n_rows": 2085,
+      "n_windows": 3,
+      "max_ports_per_window": 1003,
+      "distinct_dst_ip": 1,
+      "n_alerting_windows": 2,
+      "flagged": true
+    },
+    "uwf_143.88.5.12_dns": {
+      "label": "143.88.5.12 (DNS enumeration)",
+      "n_rows": 502528,
+      "n_windows": 207,
+      "max_ports_per_window": 3,
+      "distinct_dst_ip": 1,
+      "n_alerting_windows": 0,
+      "flagged": false
+    }
+  },
+  "dns_exhaustion": "cannot_be_tested -- query/domain name field absent from UWF-ZeekData22 export",
+  "max_dns_query_rate_per_30s_window": 18176
+}

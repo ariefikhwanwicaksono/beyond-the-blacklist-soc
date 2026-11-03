@@ -1,0 +1,259 @@
+diff --git a/core/log.py b/core/log.py
+index 5e75f95a..e30f5982 100644
+--- a/core/log.py
++++ b/core/log.py
+@@ -44,6 +44,13 @@ _condensing_lock = threading.Lock()
+ _single_messages = set()
+ _thread_data = threading.local()
+ 
++# DIAGNOSTIC v3 (temporary, offline-only) -- pinpoints exactly which internal gate of log_event()
++# drops an event before it reaches the actual log write. Pure counting, no behaviour change.
++# Marker: 'PATCH diagnostic-log-gates'.
++_DIAG_LOG_GATE_COUNTERS = {"total": 0, "dropped_ignore_event": 0, "dropped_whitelisted": 0,
++                           "dropped_skip_write": 0, "queued_condense": 0, "dropped_throttle": 0,
++                           "written": 0}
++
+ def create_log_directory():
+     if not os.path.isdir(config.LOG_DIR):
+         if not config.DISABLE_CHECK_SUDO and check_sudo() is False:
+@@ -266,7 +273,11 @@ def log_event(event_tuple, packet=None, skip_write=False, skip_condensing=False)
+ 
+     try:
+         sec, usec, src_ip, src_port, dst_ip, dst_port, proto, trail_type, trail, info, reference = event_tuple
++        if config.pcap_file:
++            _DIAG_LOG_GATE_COUNTERS["total"] += 1
+         if ignore_event(event_tuple):
++            if config.pcap_file:
++                _DIAG_LOG_GATE_COUNTERS["dropped_ignore_event"] += 1
+             return
+ 
+         if not (any(check_whitelisted(_) for _ in (src_ip, dst_ip)) and trail_type != TRAIL.DNS):  # DNS requests/responses can't be whitelisted based on src_ip/dst_ip
+@@ -282,6 +293,8 @@ def log_event(event_tuple, packet=None, skip_write=False, skip_condensing=False)
+                             if len(_condensed_events[key]) < MAX_CONDENSED_EVENTS:
+                                 _condensed_events[key].append(event_tuple)
+ 
++                        if config.pcap_file:
++                            _DIAG_LOG_GATE_COUNTERS["queued_condense"] += 1
+                         return
+ 
+                 current_bucket = sec // config.PROCESS_COUNT
+@@ -290,6 +303,8 @@ def log_event(event_tuple, packet=None, skip_write=False, skip_condensing=False)
+                     _thread_data.log_trails = set()
+                 else:
+                     if any(_ in _thread_data.log_trails for _ in ((src_ip, trail), (dst_ip, trail))):
++                        if config.pcap_file:
++                            _DIAG_LOG_GATE_COUNTERS["dropped_throttle"] += 1
+                         return
+                     else:
+                         _thread_data.log_trails.add((src_ip, trail))
+@@ -323,6 +338,13 @@ def log_event(event_tuple, packet=None, skip_write=False, skip_condensing=False)
+                     sys.stderr.write(event)
+                     sys.stderr.flush()
+ 
++                if config.pcap_file:
++                    _DIAG_LOG_GATE_COUNTERS["written"] += 1
++            elif config.pcap_file:
++                _DIAG_LOG_GATE_COUNTERS["dropped_skip_write"] += 1
++        elif config.pcap_file:
++            _DIAG_LOG_GATE_COUNTERS["dropped_whitelisted"] += 1
++
+     except (OSError, IOError):
+         if config.SHOW_DEBUG:
+             traceback.print_exc()
+diff --git a/old/sensor.py b/old/sensor.py
+index 62ffc849..8fec48a9 100644
+--- a/old/sensor.py
++++ b/old/sensor.py
+@@ -61,6 +61,33 @@ from core.log import flush_condensed_events
+ from core.log import get_error_log_handle
+ from core.log import log_error
+ from core.log import log_event
++
++# DIAGNOSTIC v2 (temporary, offline-only) -- log_event() is the ONE point that ALL trail-matching
++# paths in _process_packet go through (SYN, scan heuristics, HTTP, UDP/DNS, ICMP), not just the
++# TCP-SYN block instrumented in v1. Wrapping it here counts CALLS to log_event per TRAIL.* type --
++# a recorded call does NOT guarantee that a line is actually written to <pcap>.log (log_event itself
++# has internal whitelist/IGNORE_EVENTS/per-second dedup gates that this patch does not touch).
++# Marker: 'PATCH diagnostic-syn-counters-v2'.
++_DIAG_LOG_EVENT_CALLS = {}   # trail_type (str) -> number of calls, offline mode only
++_diag_orig_log_event = log_event
++def log_event(event_tuple, *args, **kwargs):
++    if config.pcap_file:
++        try:
++            _tt = str(event_tuple[7])
++            _DIAG_LOG_EVENT_CALLS[_tt] = _DIAG_LOG_EVENT_CALLS.get(_tt, 0) + 1
++        except Exception:
++            pass
++    return _diag_orig_log_event(event_tuple, *args, **kwargs)
++
++# DIAGNOSTIC v3 (temporary, offline-only) -- imports the core.log MODULE (not just one name) so
++# that its _DIAG_LOG_GATE_COUNTERS (see patch_log_diagnostic_gates in core/log.py) keeps pointing
++# to the SAME dict mutated by the original log_event() -- the dict is changed in place (not
++# re-assigned), so this module reference is updated automatically without manual syncing.
++# PREREQUISITE: core/log.py MUST ALREADY be patched (patch_log_diagnostic_gates) BEFORE this
++# sensor.py is imported/run -- otherwise the line below fails with a clear AttributeError (rather
++# than silently miscounting), because _DIAG_LOG_GATE_COUNTERS does not exist in the module yet.
++# Marker: 'PATCH diagnostic-log-gates-sensor-import'.
++from core import log as _diag_log_module
+ from core import meta
+ from core.parallel import worker
+ from core.parallel import write_block
+@@ -254,6 +281,15 @@ _result_cache = LRUDict(MAX_CACHE_ENTRIES)
+ _local_cache = LRUDict(MAX_CACHE_ENTRIES)
+ _valid_dns_name_regex = re.compile(VALID_DNS_NAME_REGEX)  # NOTE: precompiled (used per DNS query); ~2x vs re.search(string, ...)
+ _last_syn = None
++
++# DIAGNOSTIC (temporary, offline-only) -- counts how many SYN packets reach each stage of the
++# blacklist-match / burst-dedup pipeline, to investigate the alert-count collapse observed after
++# the header.getts() offline-timestamp patch (PATCH offline-timestamp). Pure counting, changes no
++# detection behaviour. Marker: 'PATCH diagnostic-syn-counters'.
++_DIAG_SYN_COUNTERS = {"total": 0, "burst_skipped": 0, "trail_hit": 0, "logged_skipped": 0, "alert_emitted": 0,
++                      "would_match_total": 0, "would_match_dst": 0, "would_match_src": 0,
++                      "would_match_via_addr_port": 0, "burst_skipped_would_have_matched": 0}
++# DIAGNOSTIC v2 (temporary, offline-only). Marker: 'PATCH diagnostic-syn-counters-v2'.
+ _last_logged_syn = None
+ _last_udp = None
+ _last_logged_udp = None
+@@ -552,10 +588,33 @@ def _process_packet(packet, sec, usec, ip_offset):
+             if flags == 2:  # SYN set (only)
+                 _ = _last_syn
+                 _last_syn = (sec, src_ip, src_port, dst_ip, dst_port)
++                _diag_would_match_dst = _diag_would_match_src = _diag_would_match_combo = False
++                if config.pcap_file:
++                    _DIAG_SYN_COUNTERS["total"] += 1
++                    # DIAGNOSTIC v2: predicate IDENTICAL to the original check below (bare IP OR the
++                    # addr_port "IP:port" form), evaluated here -- BEFORE the burst skip -- only to
++                    # learn whether a packet about to be skipped would actually match the blacklist.
++                    _diag_would_match_dst = dst_ip in trails or addr_port(dst_ip, dst_port) in trails
++                    _diag_would_match_src = (src_ip in trails or addr_port(src_ip, src_port) in trails) and dst_ip != localhost_ip
++                    _diag_would_match_combo = addr_port(dst_ip, dst_port) in trails or (addr_port(src_ip, src_port) in trails and dst_ip != localhost_ip)
++                    if _diag_would_match_dst or _diag_would_match_src:
++                        _DIAG_SYN_COUNTERS["would_match_total"] += 1
++                        if _diag_would_match_dst:
++                            _DIAG_SYN_COUNTERS["would_match_dst"] += 1
++                        if _diag_would_match_src:
++                            _DIAG_SYN_COUNTERS["would_match_src"] += 1
++                        if _diag_would_match_combo:
++                            _DIAG_SYN_COUNTERS["would_match_via_addr_port"] += 1
+                 if _ == _last_syn:  # skip bursts
++                    if config.pcap_file:
++                        _DIAG_SYN_COUNTERS["burst_skipped"] += 1
++                        if _diag_would_match_dst or _diag_would_match_src:
++                            _DIAG_SYN_COUNTERS["burst_skipped_would_have_matched"] += 1
+                     return
+ 
+                 if dst_ip in trails or addr_port(dst_ip, dst_port) in trails:
++                    if config.pcap_file:
++                        _DIAG_SYN_COUNTERS["trail_hit"] += 1
+                     _ = _last_logged_syn
+                     _last_logged_syn = _last_syn
+                     if _ != _last_logged_syn:
+@@ -565,9 +624,15 @@ def _process_packet(packet, sec, usec, ip_offset):
+                         if not any(_ in trails[trail][0] for _ in ("attacker",)) and not ("parking site" in trails[trail][0] and dst_port not in (80, 443)):
+                             # IPORT iff the matched key is the addr_port form (not the bare IP). The old
+                             # `':' not in trail` check mis-typed EVERY IPv6 IP-trail as IPORT (v6 addrs contain ':').
++                            if config.pcap_file:
++                                _DIAG_SYN_COUNTERS["alert_emitted"] += 1
+                             log_event((sec, usec, src_ip, src_port, dst_ip, dst_port, PROTO.TCP, TRAIL.IPORT if trail != dst_ip else TRAIL.IP, trail, trails[trail][0], trails[trail][1]), packet)
++                    elif config.pcap_file:
++                        _DIAG_SYN_COUNTERS["logged_skipped"] += 1
+ 
+                 elif (src_ip in trails or addr_port(src_ip, src_port) in trails) and dst_ip != localhost_ip:
++                    if config.pcap_file:
++                        _DIAG_SYN_COUNTERS["trail_hit"] += 1
+                     _ = _last_logged_syn
+                     _last_logged_syn = _last_syn
+                     if _ != _last_logged_syn:
+@@ -575,7 +640,11 @@ def _process_packet(packet, sec, usec, ip_offset):
+                         if trail not in trails:
+                             trail = src_ip
+                         if not any(_ in trails[trail][0] for _ in ("malware",)):
++                            if config.pcap_file:
++                                _DIAG_SYN_COUNTERS["alert_emitted"] += 1
+                             log_event((sec, usec, src_ip, src_port, dst_ip, dst_port, PROTO.TCP, TRAIL.IPORT if trail != src_ip else TRAIL.IP, trail, trails[trail][0], trails[trail][1]), packet)
++                    elif config.pcap_file:
++                        _DIAG_SYN_COUNTERS["logged_skipped"] += 1
+ 
+                 if config.USE_HEURISTICS:
+                     if dst_ip != localhost_ip:
+@@ -1489,9 +1558,47 @@ def monitor():
+             packet = packet[:SNAP_LEN]
+ 
+         try:
+-            # NOTE: pcapy-ng returns unusable header timestamps on Python 3, so the wall clock
++            # NOTE (original): pcapy-ng returns unusable header timestamps on Python 3, so the wall clock
+             # is substituted. https://github.com/helpsystems/pcapy/issues/37#issuecomment-530795813
+-            sec, usec = [int(_) for _ in ("%.6f" % time.time()).split('.')]
++            # PATCH 25 August 2026 (investigation of offline-replay non-determinism, see README.md):
++            # the claim above could NOT be verified empirically for pcapy-ng 2.1.0 (Python 3.11, Linux) --
++            # header.getts() does return the original pcap timestamp correctly (tested directly with a
++            # synthetic 5-packet pcap, exact match down to the microsecond -- see README.md and the C.1b
++            # self-test cell). Used HERE only for OFFLINE mode (config.pcap_file set) so that replaying
++            # the SAME pcap yields the SAME time values on every run -- a requirement for experiment
++            # reproducibility. Live capture STILL uses the wall clock (original behaviour NOT changed) --
++            # the "unusable" claim for live capture has not been re-verified; do not assume it is safe.
++            # Automatic fallback to the wall clock if getts() returns implausible values (e.g. another
++            # pcapy-ng version really is broken in that environment).
++            sec = usec = None
++            if config.pcap_file:
++                try:
++                    _ts_sec, _ts_usec = header.getts()
++                    if 631152000 <= _ts_sec <= time.time() + 86400 and 0 <= _ts_usec <= 999999:
++                        sec, usec = int(_ts_sec), int(_ts_usec)
++                    elif 0 <= _ts_sec < 631152000 and 0 <= _ts_usec <= 999999:
++                        # PATCH offline-timestamp-relative-fallback (28 August 2026, investigation of
++                        # tinba.pcap non-determinism, see README.md "Relative-timestamp fallback fix
++                        # (tinba)"): a VALID timestamp
++                        # (not an exception/garbage) but below the sanity-check floor -- found
++                        # in tinba.pcap (ts_sec 0..~1755, anchored near the 1970-01-01 epoch, not the
++                        # real capture date -- probably a synthetic/relative pcap). Such timestamps
++                        # are still INTERNALLY CONSISTENT & deterministic (read straight from the file
++                        # bytes, identical on every read) -- shifted by a FIXED OFFSET (the
++                        # sanity-check floor itself, 631152000 = 1990-01-01) so they pass the
++                        # sanity-check range WITHOUT the wall clock (which differs per run). The original
++                        # inter-packet gaps are preserved -- the per-second throttle depends on those
++                        # gaps, not on absolute values, so replaying the same pcap is deterministic again.
++                        sec, usec = int(_ts_sec) + 631152000, int(_ts_usec)
++                except Exception:
++                    pass
++            if sec is None:
++                if config.pcap_file and not getattr(packet_handler, "_ts_fallback_warned", False):
++                    packet_handler._ts_fallback_warned = True
++                    print("[!] PATCH offline-timestamp: header.getts() is not valid in this environment -- "
++                          "falling back to the wall clock (non-deterministic drift is STILL possible, see "
++                          "README.md 'Investigation of the Zeus alert-count drift').")
++                sec, usec = [int(_) for _ in ("%.6f" % time.time()).split('.')]
+ 
+             if _multiprocessing:
+                 block = struct.pack("=III", sec, usec, ip_offset) + packet
+@@ -1643,6 +1750,30 @@ def monitor():
+                     elif config.pcap_file:
+                         with _done_lock:
+                             _done_count += 1
++                        c = _DIAG_SYN_COUNTERS
++                        print("[diag] SYN counters for '%s': total=%d burst_skipped=%d trail_hit=%d "
++                              "logged_skipped=%d alert_emitted=%d" % (config.pcap_file, c["total"],
++                              c["burst_skipped"], c["trail_hit"], c["logged_skipped"], c["alert_emitted"]))
++                        print("[diag-v2] would-match (pre-burst-skip) for '%s': would_match_total=%d "
++                              "would_match_dst=%d would_match_src=%d would_match_via_addr_port=%d "
++                              "burst_skipped_would_have_matched=%d" % (config.pcap_file,
++                              c["would_match_total"], c["would_match_dst"], c["would_match_src"],
++                              c["would_match_via_addr_port"], c["burst_skipped_would_have_matched"]))
++                        if _DIAG_LOG_EVENT_CALLS:
++                            print("[diag-v2] log_event calls for '%s': %s" % (config.pcap_file,
++                                  ", ".join("%s=%d" % (k, v) for k, v in sorted(_DIAG_LOG_EVENT_CALLS.items()))))
++                        else:
++                            print("[diag-v2] log_event calls for '%s': (no calls at all)" % config.pcap_file)
++                        if _diag_log_module._DIAG_LOG_GATE_COUNTERS["total"]:
++                            g = _diag_log_module._DIAG_LOG_GATE_COUNTERS
++                            print("[diag-v3] log_event internal gates for '%s': total=%d "
++                                  "dropped_ignore_event=%d dropped_whitelisted=%d dropped_skip_write=%d "
++                                  "queued_condense=%d dropped_throttle=%d written=%d" % (config.pcap_file,
++                                  g["total"], g["dropped_ignore_event"], g["dropped_whitelisted"],
++                                  g["dropped_skip_write"], g["queued_condense"], g["dropped_throttle"],
++                                  g["written"]))
++                        else:
++                            print("[diag-v3] log_event internal gates for '%s': (log_event was never called)" % config.pcap_file)
+                         break
+                 except (pcapy.PcapError, socket.timeout):
+                     pass

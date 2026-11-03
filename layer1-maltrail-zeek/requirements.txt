@@ -1,0 +1,5 @@
+requests
+pandas
+py7zr
+jupyter
+ipykernel
